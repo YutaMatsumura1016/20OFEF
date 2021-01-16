@@ -79,7 +79,7 @@
 	if('serviceWorker' in navigator){
 		window.addEventListener("load", async () => {
 			console.log("SWを読み込んでいます");
-			await navigator.serviceWorker.register("./sw.js");
+			await navigator.serviceWorker.register('/sw.js');
 		});
 
 	}
