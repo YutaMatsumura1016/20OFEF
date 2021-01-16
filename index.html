@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "ja">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>20OFEF</title>
+	<link rel = "manifest" href = "./manifest.json">
+	<link rel = "stylesheet" href = "style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<!-------------------------------------------------------------------------------------->
+
+<body>
+
+	<header>
+		<p class = "site-header">
+			<img src = "images/ロゴ_統合2.png" alt = "チームロゴ" width = "244" height = "37"/>
+		</p>
+
+		<ul class = "tabs">
+			<li><span class = "tabsSpace"><b>ホーム</b></span></li>
+			<li><span class = "tabsSpace"><a class = "tabsColor" href = "toujitsu.html">当日資料</a></span></li>
+			<li><span class = "tabsSpace"><a class = "tabsColor" href = "siryou20.html">20資料</a></span></li>
+			<li><span class = "tabsSpace"><a class = "tabsColor" href = "siryouKako.html">過去資料</a></span></li>
+		</ul>
+
+		<div class = "humburgerMenu">
+			<input type = "checkbox" id = "menuCheck" class = "menuHidden" >
+			<label for = "menuCheck" class= "menuOpen"><span></span></label>
+
+			<nav class="humburgerContent">
+				<ul class="menuList">
+				  <li><a href=""><b>ホーム</b></a></li>
+				  <li><a href="toujitsu.html">当日資料</a></li>
+				  <li><a href="">20資料</a></li>
+				  <li><a href="">過去資料</a></li>
+				</ul>
+			  </nav>
+
+		</div>
+
+	</header>
+
+<!-------------------------------------------------------------------------------------->
+
+	<div class = "imaara">
+		<img src = "images/IMAARA.png" alt = "20ロゴ" width = "100" height = "100"/>
+	</div>
+
+
+
+		<div class = "title">おすすめの資料<br/></div>
+
+
+		<details>
+			<summary class = "subTitle">歴認資料<hr class = "hrSubTitle"></summary>
+				<ul class = "allContents">
+					<li><a href = "https://docs.google.com/spreadsheets/d/1xxwspalcmnMNAcIpuZcHew1eHuAQWYj8LuHNJqxk_Z0/edit?usp=sharing" target = "_blank">OFEF歴認2020</a></li>
+					<li><a href = "https://docs.google.com/document/d/1nL2xN0VSOH6ko4no4v7kUZ_XBamGT_r_PRRASQ_bRxM/edit?usp=sharing" target = "_blank">2019年度歴認白書</a></li>
+					<li><a href = "https://docs.google.com/document/d/13eUgQXwF6U98IuzQiLHeJe2LIfAaXt36YTN1loKEOP0/edit?usp=sharing" target = "_blank">18企画局歴史認識PJ</a></li>
+				</ul>
+		</details>
+
+
+		<details>
+			<summary class = "subTitle">OFEF関連<hr class = "hrSubTitle"></summary>
+				<ul class = "allContents">
+					<li><a href = "https://docs.google.com/spreadsheets/d/1xxwspalcmnMNAcIpuZcHew1eHuAQWYj8LuHNJqxk_Z0/edit?usp=sharing" target = "_blank">20OFEFチーフ総括</a></li>
+					<li><a href = "https://docs.google.com/presentation/d/1qHnMxSamuVHpmDsxHl8RpsxeujfGSZRUJW8AkwunKBE/edit?usp=sharing" target = "_blank">16EF歴認</a></li>
+					<li><a href = "https://drive.google.com/file/d/0B4tNVmqf5ru2Ri1VWHNOc2VQQUk/view?usp=sharing" target = "_blank">02フィナーレ総括</a></li>
+				</ul>
+		</details>
+
+
+<!-------------------------------------------------------------------------------------->
+	<script>
+	if('serviceWorker' in navigator){
+		window.addEventListener("load", async () => {
+			console.log("SWを読み込んでいます");
+			await navigator.serviceWorker.register("/sw.js");
+		});
+
+	}
+	</script>
+</body>
+</html>
