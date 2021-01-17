@@ -1,11 +1,13 @@
 [PWA]
-
 ・VS CodeはApp dataフォルダにある
 ・アイコンの最小サイズは192*192
 ・×(かける)は「x(小文字エックス)」
 ・sw.jsは直下でないと動かない
+・sw.jsは絶対パスで書く
+・manifest.jsonのパスは「./manifest.json」
 ・Chromeのコンソールは再読み込みしないと重複エラーになる
-
+・startURLは「./」(ピリオドがないとエラーになる)
+・内容を更新したらキャッシュ番号も更新
 
 
 
@@ -28,6 +30,6 @@ https://note.com/ocha_green/n/n4f2200399859
 ・プッシュは「ローカルリポジトリの内容をリモートサーバに更新」
 
 
-・内容を更新したらキャッシュ番号も更新？
+
 
 ・https://yutamatsumura1016.github.io/20OFEF/
