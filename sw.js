@@ -1,4 +1,4 @@
-const cacheName = 'V1.9'; //キャッシュの名づけ
+const cacheName = 'V2.0.0'; //キャッシュの名づけ
 
 const cacheAssets = [ //必要最低限のもの
 	'index.html',
