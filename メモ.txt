@@ -1,0 +1,33 @@
+[PWA]
+
+・VS CodeはApp dataフォルダにある
+・アイコンの最小サイズは192*192
+・×(かける)は「x(小文字エックス)」
+・sw.jsは直下でないと動かない
+・Chromeのコンソールは再読み込みしないと重複エラーになる
+
+
+
+
+[GIT]
+・これでインストールして
+https://qiita.com/y-tsutsu/items/2ba96b16b220fb5913be
+
+・導入はこれで
+https://qiita.com/jesus_isao/items/63557eba36819faa4ad9
+
+・Githubはこれ
+https://note.com/ocha_green/n/n4f2200399859
+
+・更新したらVSCodeで「ソース管理タブにメッセージ→ctrl + enter」
+・git push
+
+
+・ステージングは「ローカルリポジトリの更新対象に追加」
+・コミットは「ローカルリポジトリを更新」
+・プッシュは「ローカルリポジトリの内容をリモートサーバに更新」
+
+
+・内容を更新したらキャッシュ番号も更新？
+
+・https://yutamatsumura1016.github.io/20OFEF/
