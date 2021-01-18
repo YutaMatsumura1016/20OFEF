@@ -33,3 +33,10 @@ https://note.com/ocha_green/n/n4f2200399859
 
 
 ・https://yutamatsumura1016.github.io/20OFEF/
+
+
+[やりたいこと]
+・プッシュ通知
+・内容充実
+・ログイン
+・計画検索機能
