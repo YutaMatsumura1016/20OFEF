@@ -6,19 +6,16 @@
 	<title>過去資料</title>
 	<link rel = "manifest" href = "./manifest.json">
 	<link rel = "stylesheet" href = "style.css">
-	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel = "stylesheet" href = "https://jenil.github.io/bulmaswatch/default/bulmaswatch.min.css">
 	<link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap">
-	<link rel = "stylesheet" href = "https://unpkg.com/bulma@0.7.5/css/bulma.min.css">
-	<link rel = "stylesheet" href = "https://unpkg.com/bulma@0.7.5/css/bulma.min.css">
 
-	<script src = "https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"
-        integrity = "sha512-rKFvwjvE4liWPlFnvH4ZhRDfNZ9FOpdkD/BU5gAIA3VS3vOQrQ5BjKgbO3kxebKhHdHcNUHLqxQYSoxee9UwgA=="
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"
+		integrity = "sha512-r
+		KFvwjvE4liWPlFnvH4ZhRDfNZ9FOpdkD/BU5gAIA3VS3vOQrQ5BjKgbO3kxebKhHdHcNUHLqxQYSoxee9UwgA=="
         crossorigin = "anonymous">
-	</script>
+    </script>
+    
 </head>
-
 <!-------------------------------------------------------------------------------------->
 
 <body>
@@ -55,45 +52,41 @@
     
     <div class = "title"><br/><br/>過去資料<br/></div>
 
-	<section class="hero is-fullheight is-default is-bold">
-        <div id="app">
-            <div class="hero-head">
-                <nav class="navbar">
 
-                    <div class="container">
-                        <div class="navbar-brand">
-                            <a class="navbar-item" href="../">
+<!-------------------------------------------------------------------------------------->
+
+
+	<section class = "hero is-fullheight is-default is-bold"> <!--sectionはまとまりを示すタグ-->
+    	<div id = "app">
+            <div class = "hero-head">
+                <nav class="navbar"> <!--navはナビゲーションリンクを示すタグ -->
+
+                    <div class = "container">
+                        <div class = "navbar-brand">
+                            <a class = "navbar-item" href="../">
                                 <i style="color: slategrey" aria-hidden="true" class="fa fa-th fa-rotate-90"></i>
-                                <p style="padding-left:5px">{{ csvTitle || "CSV Reader" }}</p>
                             </a>
 
                             <span class="navbar-burger burger" data-target="navbarMenu"
-                                @click="isMenuOpen = !isMenuOpen" v-bind:class="{'is-active': isMenuOpen}">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
+                                @click="isMenuOpen = !isMenuOpen" v-bind:class="{'is-active': isMenuOpen}"><!--spanはインライン要素でグループ化するタグ-->
+                        	</span>
                         </div>
-                        <div id="navbarMenu" class="navbar-menu" v-bind:class="{'is-active': isMenuOpen}">
-                            <div class="navbar-end">
-                                <span class="navbar-item">
-                                    <a class="button is-outlined">
-                                        <span class="icon">
-                                            <i class="fa fa-upload" aria-hidden="true"></i>
+                        <div id = "navbarMenu" class = "navbar-menu" v-bind:class = "{'is-active': isMenuOpen}"> <!--isMenuOpenなときにis-activeというクラス名に変わる -->
+                            <div class = "navbar-end">
+                                <span class = "navbar-item">
+                                    <a class = "button is-outlined">
+                                        <span class = "icon">
+                                            <i class = "fa fa-upload" aria-hidden = "true"></i>
                                         </span>
-                                        <span>Import</span>
-                                        <input style="cursor: hand" class="file-input" @change="OpenDialog" type="file"
-                                            accept=".csv">
                                     </a>
                                 </span>
-                                <span class="navbar-item" v-if="isHttpReq" v-for="csvBtn in csvPathList">
-                                    <a class="button is-outlined">
-                                        <span class="icon">
-                                            <i class="fa fa-th fa-rotate-90" aria-hidden="true"></i>
+                                <span class = "navbar-item" v-if = "isHttpReq" v-for = "csvBtn in csvPathList">
+                                    <a class = "button is-outlined">
+                                        <span class = "icon">
+                                            <i class = "fa fa-th fa-rotate-90" aria-hidden = "true"></i>
                                         </span>
                                         <span>{{csvBtn.btnName}}</span>
-                                        <input style="cursor: hand" class="file-input"
-                                            @click="RequestCsvPath(csvBtn.csvPath)">
+                                        <input style = "cursor: hand" class = "file-input  @click = "RequestCsvPath(csvBtn.csvPath)">
                                     </a>
                                 </span>
                             </div>
@@ -101,6 +94,8 @@
                     </div>
                 </nav>
             </div>
+
+
 
             <div style="padding: 20px;" class="container has-text-centered" v-if="csvCols.length > 0">
                 <div class="field is-grouped">
@@ -120,30 +115,11 @@
                             Search
                         </a>
                     </p>
-                </div>
-
-                <div class="control">
-                    <label>
-                        <input v-model="numSearchMode" type="checkbox">
-                        数値データオプション：
-                    </label>
-                    <label class="radio">
-                        <input v-model="numSearchCondition" type="radio" name="num_condition" value="eq">
-                        等しい
-                    </label>
-                    <label class="radio">
-                        <input v-model="numSearchCondition" type="radio" name="num_condition" value="gt">
-                        以上
-                    </label>
-                    <label class="radio">
-                        <input v-model="numSearchCondition" type="radio" name="num_condition" value="le">
-                        以下
-                    </label>
-                </div>
+                </div>               
             </div>
 
 
-            <!-- <div class="hero-body"> -->
+            <div class="hero-body"> 
             <div style="padding: 0 20px 0 20px;">
                 <div class="control has-text-right">
                     <label v-if="csvData.length > 0">
@@ -170,6 +146,9 @@
         </div>
     </section>
 
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script>
         let vueApp = new Vue({
@@ -188,10 +167,7 @@
                 numSearchParams: ['eq', 'gt', 'le'],
                 searchNumMode: false,
                 csvPathList: [
-                    { btnName: 'data1', csvPath: 'c01.csv' },
-                    { btnName: 'data2', csvPath: 'c02.csv' },
-                    { btnName: 'data3', csvPath: 'c03.csv' },
-                    { btnName: 'data4', csvPath: 'c04.csv' }
+                    { btnName: 'data1', csvPath: 'c01.csv' }
                 ]
             },
 
@@ -222,19 +198,9 @@
                         };
                         httpReq.send(null); // HTTPリクエストの発行
                     });
-                    //// Shift-JISが上手くいかないので保留
-                    // Papa.parse(csvPath, {
-                    //     // header: true,
-                    //     encoding: 'Shift-JIS',
-                    //     download: true,
-                    //     dynamicTyping: true,
-                    //     complete: function (results) {
-                    //         vueThis.csvCols = results.data[0];
-                    //         vueThis.selectedCol = vueThis.csvCols[0];
-                    //         vueThis.csvData = results.data.slice(1);
-                    //         vueThis.allCsvData = results.data.slice(1);
-                    //     }
-                    // });
+			   
+					
+
                 },
                 ConvertCsv: function (csvData) {
                     const vueThis = this;
@@ -247,7 +213,8 @@
                             // console.log(results);
                         }
                     });
-                },
+				},
+				
                 ColSearch: function () {
                     if (!this.selectedCol) { return }
                     if (this.searchKeyword == '') {
@@ -330,12 +297,6 @@
         })
 
     </script>
-    <style type="text/css">
-        html,
-        body {
-            font-family: 'Open Sans';
-		}
-		
-	</style>
+	
 	
 </body>
