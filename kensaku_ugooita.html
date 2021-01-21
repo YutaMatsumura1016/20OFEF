@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>資料検索</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/default/bulmaswatch.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"
+        integrity="sha512-rKFvwjvE4liWPlFnvH4ZhRDfNZ9FOpdkD/BU5gAIA3VS3vOQrQ5BjKgbO3kxebKhHdHcNUHLqxQYSoxee9UwgA=="
+        crossorigin="anonymous"></script>
+    
+</head>
+
+
+
+<body>
+    <section class = "top">
+        <div id = "app">
+
+<!-------------------------------------------------------------------------------------->
+<!--ここから先セレクトメニュー・検索ボックス-->
+            <div style = "padding: 20px;" class = "kensakuBox" v-if = "csvCols.length > 0">
+
+                <div class = "kensakuAll">
+
+                    <p class = "selectMenu">
+                        <span class = "select">
+                            <select v-model = "selectedCol1">
+                                <option v-for = "col in csvCols">{{col}}</option>
+                            </select>
+                        </span>
+                    </p>
+                    <p class = "serchBox">
+                        <input v-model = "searchKeyword1" @keydown.enter = "SearchBoxEnterkey"
+                            placeholder = "左で列を設定して検索するキーワードを入力してください" class = "input" type = "text">
+                    </p>
+
+                    <p class = "selectMenu2">
+                        <span class = "select">
+                            <select v-model = "selectedCol2">
+                                <option v-for="col in csvCols">{{col}}</option>
+                            </select>
+                        </span>
+                    </p>
+                    <p class="serchBox2">
+                        <input v-model = "searchKeyword2" @keydown.enter = "SearchBoxEnterkey"
+                            placeholder = "左で列を設定して検索するキーワードを入力してください" class = "input" type = "text">
+                    </p> 
+
+                    <p class = "selectMenu3">
+                        <span class = "select">
+                            <select v-model = "selectedCol3">
+                                <option v-for="col in csvCols">{{col}}</option>
+                            </select>
+                        </span>
+                    </p>
+                    <p class="serchBox3">
+                        <input v-model = "searchKeyword3" @keydown.enter = "SearchBoxEnterkey"
+                            placeholder = "左で列を設定して検索するキーワードを入力してください" class = "input" type = "text">
+                    </p> 
+
+<!-------------------------------------------------------------------------------------->
+<!--ここから先検索ボタン-->
+                    <p class = "kensakuBtn">
+                        <a class = "button is-info" @click = "kensaku">
+                            検 索
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+
+
+<!-------------------------------------------------------------------------------------->
+<!--ここから先検索結果-->
+            <div style = "padding: 0 20px 0 20px;"> <!--検索結果の表-->
+                <div class = "hitsu">
+                    <label v-if = "csvData.length > 0">
+                        検索結果 : {{csvData.length}}件
+                    </label>
+                </div>
+
+                <div class = "kekkaTable">
+                    <table class = "table is-bordered is-narrow is-hoverable is-fullwidth table-responsive"> <!--表の詳細を指定-->
+                        <thead> <!--表のヘッダ行-->
+                            <tr>
+                                <th v-for = "col in csvCols"> {{col}} </th>
+                            </tr>
+                        </thead>
+
+                        <tbody v-for = "row in csvData">
+                            <tr>
+                                <td v-for = "(col, index) in csvCols">{{row[index]}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div> <!--全体締め-->
+    </section>
+
+<!-------------------------------------------------------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    
+    <script>
+        let vueApp = new Vue({
+            el: '#app',
+            data: {
+                isMenuOpen: false,
+                isHttpReq: false,
+                csvCols: [],
+                csvData: [],
+                allCsvData: [],
+                selectedCol1: null,
+                selectedCol2: null,
+                selectedCol3: null,
+                searchKeyword1: null,
+                searchKeyword2: null,
+                searchKeyword3: null,
+                csvPathList: [
+                    {csvPath: 'OFEF歴認2020.csv'}
+                ]
+            },
+
+            methods: {
+
+                //csvファイルの読み込み
+                OpenDialog: function (csvEv) {
+                    let file = csvEv.target.files[0];
+                    let reader = new FileReader();
+                    let vueThis = this;
+                    reader.onload = function (inputCsv) {
+                        const res = inputCsv.target.result;
+                        vueThis.ConvertCsv(res);
+                    }
+                    reader.readAsText(file, "Shift_JIS");
+                },
+
+                //csvをHTTPで読む
+                RequestCsvPath: function (csvPath) {
+                    const vueThis = this;
+                    new Promise((resolve, reject) => {
+                        var httpReq = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成、サーバと非同期通信するためのAPI
+                        httpReq.open("get", csvPath, true); // アクセスするファイルを指定
+                        httpReq.overrideMimeType('text/plain; charset=Shift_JIS');
+                        httpReq.onload = () => {
+                            resolve(vueThis.ConvertCsv(httpReq.responseText));
+                        };
+                        httpReq.onerror = () => {
+                            reject(new Error(httpReq.statusText));
+                        };
+                        httpReq.send(null); // HTTPリクエストの発行
+                    });
+                },
+
+                //??
+                ConvertCsv: function (csvData) {
+                    const vueThis = this;
+                    Papa.parse(csvData, {
+                        complete: function (results) {
+                            vueThis.csvCols = results.data[0];
+                            // vueThis.selectedCol1 = vueThis.csvCols[0];
+                            // vueThis.selectedCol2 = vueThis.csvCols[0];
+                            vueThis.csvData = results.data.slice(1);
+                            vueThis.allCsvData = results.data.slice(1);
+                        }
+                    });
+                },
+
+
+                //検索ボックスの中身を精査
+                kensaku: function () {
+                    // if (!this.selectedCol2) {return}
+                    // if (this.searchKeyword2 == '') {
+                    //     this.csvData = this.allCsvData;
+                    //     return;
+                    // }
+
+                    //Box1にのみ値がある場合
+                    if(!this.searchKeyword2){
+                        this.SearchWord2();
+
+                    //Box1と2に値がある場合
+                    }else if(!this.searchKeyword3){
+                        this.SearchWord3();
+
+                    //全てのBoxに値がある場合
+                    }else{
+                        this.SearchWord();
+                    }
+                },
+
+
+                //検索
+                SearchWord: function () {
+                    const vueThis = this;
+
+                    //colIndex = 選択されたインデックス(selectedCol)
+                    const colIndex1 = vueThis.csvCols.indexOf(vueThis.selectedCol1);
+                    const colIndex2 = vueThis.csvCols.indexOf(vueThis.selectedCol2);
+                    const colIndex3 = vueThis.csvCols.indexOf(vueThis.selectedCol3);
+
+                    this.csvData = this.allCsvData.filter(function (item, index) {
+                        if(!item[colIndex1] ||!item[colIndex2] || !item[colIndex3]){
+                            return false;
+                        }
+                        if(item[colIndex1].includes(vueThis.searchKeyword1) && item[colIndex2].includes(vueThis.searchKeyword2) && item[colIndex3].includes(vueThis.searchKeyword3)) {
+                            return true;
+                        }
+                    });
+                    console.log(this.csvData);
+                },
+
+                SearchWord2: function () {
+                    const vueThis = this;
+
+                    //colIndex = 選択されたインデックス(selectedCol)
+                    const colIndex1 = vueThis.csvCols.indexOf(vueThis.selectedCol1);
+
+                    this.csvData = this.allCsvData.filter(function (item, index) {
+                        if(!item[colIndex1]){
+                            return false;
+                        }
+                        if(item[colIndex1].includes(vueThis.searchKeyword1)) {
+                            return true;
+                        }
+                    });
+                    console.log(this.csvData);
+                },
+
+                SearchWord3: function () {
+                    const vueThis = this;
+
+                    //colIndex = 選択されたインデックス(selectedCol)
+                    const colIndex1 = vueThis.csvCols.indexOf(vueThis.selectedCol1);
+                    const colIndex2 = vueThis.csvCols.indexOf(vueThis.selectedCol2);
+
+                    this.csvData = this.allCsvData.filter(function (item, index) {
+                        if(!item[colIndex1] ||!item[colIndex2]){
+                            return false;
+                        }
+                        if(item[colIndex1].includes(vueThis.searchKeyword1) && item[colIndex2].includes(vueThis.searchKeyword2)) {
+                            return true;
+                        }
+                    });
+                    console.log(this.csvData);
+                },
+
+                // 日本語入力中のEnterキー操作は無効にする
+                SearchBoxEnterkey: function (event) { 
+                    if (event.keyCode !== 13) { return }
+                    this.kensaku();
+                }
+            },
+
+            mounted: function () {
+                if (location.href.indexOf('file') != -1) {
+                    this.isHttpReq = false;
+                    setTimeout(function () {
+                        alert('ファイルが見つかりません');
+                    }.bind(this), 500);
+                    return
+                } else {
+                    this.isHttpReq = true;
+                }
+                if (this.csvPathList) {
+                    this.RequestCsvPath(this.csvPathList[0].csvPath);
+                }
+            }
+
+        })
+    </script>
+
+</body>
+
+</html>
