@@ -47,15 +47,12 @@ let vueApp = new Vue({
                 httpReq.send(null); // HTTPリクエストの発行
             });
         },
-
         
         ConvertCsv: function (csvData) {
             const vueThis = this;
             Papa.parse(csvData, {
                 complete: function (results) {
                     vueThis.csvCols = results.data[0];
-                    // vueThis.selectedCol1 = vueThis.csvCols[0];
-                    // vueThis.selectedCol2 = vueThis.csvCols[0];
                     vueThis.csvData = results.data.slice(1);
                     vueThis.allCsvData = results.data.slice(1);
                 }
@@ -65,11 +62,6 @@ let vueApp = new Vue({
 
         //検索ボックスの中身を精査
         kensaku: function () {
-            // if (!this.selectedCol2) {return}
-            // if (this.searchKeyword2 == '') {
-            //     this.csvData = this.allCsvData;
-            //     return;
-            // }
 
             //Box1にのみ値がある場合
             if(!this.searchKeyword2){

@@ -1,149 +1,155 @@
-ŒN‚É‚Í1ŠÔ‚ÅGit‚É‚Â‚¢‚Ä’m‚Á‚Ä‚à‚ç‚¤(with VSCode)
+å›ã«ã¯1æ™‚é–“ã§Gitã«ã¤ã„ã¦çŸ¥ã£ã¦ã‚‚ã‚‰ã†(with VSCode)
 https://qiita.com/jesus_isao/items/63557eba36819faa4ad9
 
-Git + VScode + GitHub Šo‚¦‘‚«
+Git + VScode + GitHub è¦šãˆæ›¸ã
 https://note.com/ocha_green/n/n4f2200399859
 
-VSCode‚Å‚ÌGit‚ÌŠî–{‘€ì‚Ü‚Æ‚ß
+VSCodeã§ã®Gitã®åŸºæœ¬æ“ä½œã¾ã¨ã‚
 https://qiita.com/y-tsutsu/items/2ba96b16b220fb5913be
 
-©•ª‚Åì‚Á‚½Webƒy[ƒW‚ğƒCƒ“ƒ^[ƒlƒbƒgã‚ÉŒöŠJ‚µ‚æ‚¤I
+è‡ªåˆ†ã§ä½œã£ãŸWebãƒšãƒ¼ã‚¸ã‚’ã‚¤ãƒ³ã‚¿ãƒ¼ãƒãƒƒãƒˆä¸Šã«å…¬é–‹ã—ã‚ˆã†ï¼
 https://prog-8.com/docs/github-pages
 
-JavaScript‚ğ‚Í‚¶‚ß‚æ‚¤ #2 VSCode‚ğg‚Á‚Ä‚İ‚æ‚¤
+JavaScriptã‚’ã¯ã˜ã‚ã‚ˆã† #2 VSCodeã‚’ä½¿ã£ã¦ã¿ã‚ˆã†
 https://note.com/erukiti/n/n02217beab2ef
 
-Service Worker‚ÌŠî–{‚Æ‚»‚ê‚ğg‚Á‚Ä‚Å‚«‚é‚±‚Æ
+Service Workerã®åŸºæœ¬ã¨ãã‚Œã‚’ä½¿ã£ã¦ã§ãã‚‹ã“ã¨
 https://qiita.com/y_fujieda/items/f9e765ac9d89ba241154
 
-PWA‚É‚Â‚¢‚Ä‚¨‚³‚ç‚¢
+PWAã«ã¤ã„ã¦ãŠã•ã‚‰ã„
 https://furoblog.hatenablog.com/entry/pwa#Store%E5%AF%BE%E5%BF%9C
 
-JavaScriptƒQ[ƒ€ì¬uÀ
+JavaScriptã‚²ãƒ¼ãƒ ä½œæˆè¬›åº§
 http://www.creative-forest.com/javascript/js_game_pg/js_game_pg.html
 
-HTML‚Å‰æ‘œ‚ğ’†‰›‚É•\¦‚·‚é•û–@Iƒpƒ^[ƒ“•Ê‚ÉƒTƒ“ƒvƒ‹ƒR[ƒh‚Å‰ğàI
+HTMLã§ç”»åƒã‚’ä¸­å¤®ã«è¡¨ç¤ºã™ã‚‹æ–¹æ³•ï¼ãƒ‘ã‚¿ãƒ¼ãƒ³åˆ¥ã«ã‚µãƒ³ãƒ—ãƒ«ã‚³ãƒ¼ãƒ‰ã§è§£èª¬ï¼
 https://style.potepan.com/articles/23332.html
 
-ƒRƒsƒy‚Å‚T•bICSS3‚Å”wŒi‰æ‘œ‚ğ‰æ–Ê‚¢‚Á‚Ï‚¢‚É•\¦‚·‚é
+ã‚³ãƒ”ãƒšã§ï¼•ç§’ï¼CSS3ã§èƒŒæ™¯ç”»åƒã‚’ç”»é¢ã„ã£ã±ã„ã«è¡¨ç¤ºã™ã‚‹
 https://dream-net.org/blog/?p=1150
 
-ƒwƒbƒ_[EƒiƒrƒQ[ƒVƒ‡ƒ“‚ğŒÅ’è•\¦‚³‚¹‚éƒAƒCƒfƒA5‚Â
+ãƒ˜ãƒƒãƒ€ãƒ¼ãƒ»ãƒŠãƒ“ã‚²ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å›ºå®šè¡¨ç¤ºã•ã›ã‚‹ã‚¢ã‚¤ãƒ‡ã‚¢5ã¤
 https://webdesignday.jp/inspiration/technique/css/4166/
 
-1s‚Å‘‚­IÜ‚è‚½‚½‚İƒƒjƒ…[II
+1è¡Œã§æ›¸ãï¼æŠ˜ã‚ŠãŸãŸã¿ãƒ¡ãƒ‹ãƒ¥ãƒ¼ï¼ï¼
 https://qiita.com/kobotyann/items/c8f85f88f8ba39a34932
 
-CSS‚Ìmargin‚Æ‚ÍHpadding‚Æ‚ÍH—]”’‚Ìw’è•û–@‚Ü‚Æ‚ß
+CSSã®marginã¨ã¯ï¼Ÿpaddingã¨ã¯ï¼Ÿä½™ç™½ã®æŒ‡å®šæ–¹æ³•ã¾ã¨ã‚
 https://saruwakakun.com/html-css/basic/margin-padding
 
-yHTML‰SÒŒü‚¯zsŠÔ‚ğw’è‚·‚éline-height:‚Ìg‚¢•û
+ã€HTMLåˆå¿ƒè€…å‘ã‘ã€‘è¡Œé–“ã‚’æŒ‡å®šã™ã‚‹line-height:ã®ä½¿ã„æ–¹
 https://blog.codecamp.jp/programming-html-first-lineheight
 
-ƒŠƒ“ƒN‚Ì•¶šF‚ğw’è‚·‚é
+ãƒªãƒ³ã‚¯ã®æ–‡å­—è‰²ã‚’æŒ‡å®šã™ã‚‹
 https://www.tagindex.com/stylesheet/link/color.html
 
-ƒEƒCƒ“ƒhƒE•‚É‡‚í‚¹‚Ä‰æ‘œƒTƒCƒY‚ğ•Ï‰»‚³‚¹‚é•û–@
+ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦å¹…ã«åˆã‚ã›ã¦ç”»åƒã‚µã‚¤ã‚ºã‚’å¤‰åŒ–ã•ã›ã‚‹æ–¹æ³•
 https://allabout.co.jp/gm/gc/400630/#aa400630width-sample3
 
-•¶š‚É‰e‚ğ‚Â‚¯‚½‚¢ICSS‚Ìtext-shadow‚Ìg‚¢•ûy‰SÒŒü‚¯z
+æ–‡å­—ã«å½±ã‚’ã¤ã‘ãŸã„ï¼CSSã®text-shadowã®ä½¿ã„æ–¹ã€åˆå¿ƒè€…å‘ã‘ã€‘
 https://techacademy.jp/magazine/8804
 
-yHTML“ü–åzhrƒ^ƒO‚Å…•½ü‚Ì‘¾‚³E’·‚³EF‚ğƒfƒUƒCƒ“‚·‚é•û–@
+ã€HTMLå…¥é–€ã€‘hrã‚¿ã‚°ã§æ°´å¹³ç·šã®å¤ªã•ãƒ»é•·ã•ãƒ»è‰²ã‚’ãƒ‡ã‚¶ã‚¤ãƒ³ã™ã‚‹æ–¹æ³•
 https://www.sejuku.net/blog/52877
 
-HTML‚Ìdetails‚ÅÜ‚è‚½‚½‚İ‚Å‚«‚é—v‘f‚ğì¬‚·‚é
+HTMLã®detailsã§æŠ˜ã‚ŠãŸãŸã¿ã§ãã‚‹è¦ç´ ã‚’ä½œæˆã™ã‚‹
 https://shu-sait.com/html-details-oritatami/#outline__5
 
-ƒŠƒXƒgƒ^ƒO‚ğ‰¡•À‚Ñ‚É‚·‚é display:inline;
+ãƒªã‚¹ãƒˆã‚¿ã‚°ã‚’æ¨ªä¸¦ã³ã«ã™ã‚‹ display:inline;
 https://www.homepage-tukurikata.com/css/display-inline.html
 
-‚·‚®‚í‚©‚éIHTML‚ÅƒXƒy[ƒX‚â‹ó”’‚ğ“ü‚ê‚é³‚µ‚¢•û–@
+ã™ãã‚ã‹ã‚‹ï¼HTMLã§ã‚¹ãƒšãƒ¼ã‚¹ã‚„ç©ºç™½ã‚’å…¥ã‚Œã‚‹æ­£ã—ã„æ–¹æ³•
 https://webliker.info/03847/
 
-ƒy[ƒW“à‚ÅA“Á’è‚ÌƒŠƒ“ƒN•¶š‚¾‚¯ˆá‚¤F‚Å•\¦‚³‚¹‚éB
+ãƒšãƒ¼ã‚¸å†…ã§ã€ç‰¹å®šã®ãƒªãƒ³ã‚¯æ–‡å­—ã ã‘é•ã†è‰²ã§è¡¨ç¤ºã•ã›ã‚‹ã€‚
 http://blog.livedoor.jp/seo666/archives/50293704.html
 
-bƒ^ƒO‚Æstrongƒ^ƒO‚Ì‘‚«•ûIHTML‚Å•¶š‚ğ‘¾š‚É‚·‚é•û–@y‰SÒŒü‚¯z
+bã‚¿ã‚°ã¨strongã‚¿ã‚°ã®æ›¸ãæ–¹ï¼HTMLã§æ–‡å­—ã‚’å¤ªå­—ã«ã™ã‚‹æ–¹æ³•ã€åˆå¿ƒè€…å‘ã‘ã€‘
 https://techacademy.jp/magazine/12592
 
-HTML & CSS - ƒeƒLƒXƒg‚Ì•¶šŠÔŠu‚ğ’²®‚·‚é
+HTML & CSS - ãƒ†ã‚­ã‚¹ãƒˆã®æ–‡å­—é–“éš”ã‚’èª¿æ•´ã™ã‚‹
 https://murashun.jp/article/programming/html/html-css-letter-spacing.html
 
-CSS‚Å—v‘f‚ğ”ñ•\¦‚É‚·‚é12‚Ì•û–@
+CSSã§è¦ç´ ã‚’éè¡¨ç¤ºã«ã™ã‚‹12ã®æ–¹æ³•
 https://tenman.info/labo/css/?p=8168
 
-¡‚³‚ç•·‚¯‚È‚¢!?CSS‚Ìborder-radius‚Å—lX‚ÈŠpŠÛ‚É’§íI
+ä»Šã•ã‚‰èã‘ãªã„!?CSSã®border-radiusã§æ§˜ã€…ãªè§’ä¸¸ã«æŒ‘æˆ¦ï¼
 https://www.webcreatorbox.com/tech/border-radius
 
-JavaScript•s—vICSS‚¾‚¯‚Åƒnƒ“ƒo[ƒK[ƒƒjƒ…[‚ğÀ‘•‚·‚é•û–@
+JavaScriptä¸è¦ï¼CSSã ã‘ã§ãƒãƒ³ãƒãƒ¼ã‚¬ãƒ¼ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’å®Ÿè£…ã™ã‚‹æ–¹æ³•
 https://www.asobou.co.jp/blog/web/css-menu
 
-CSS‚¾‚¯‚Åì‚éƒnƒ“ƒo[ƒKƒƒjƒ…[
+CSSã ã‘ã§ä½œã‚‹ãƒãƒ³ãƒãƒ¼ã‚¬ãƒ¡ãƒ‹ãƒ¥ãƒ¼
 https://yuntu-tek.com/hamburger-menu/
 
-<span>‚Ì‰ğàbƒNƒƒmƒhƒ‰ƒCƒu‚ÌHTML«“T
+<span>ã®è§£èª¬ï½œã‚¯ãƒ­ãƒãƒ‰ãƒ©ã‚¤ãƒ–ã®HTMLè¾å…¸
 https://html-coding.co.jp/annex/dictionary/html/span/
 
-Node.js‚ÅXMLHttpRequest‚ğg‚¤
+Node.jsã§XMLHttpRequestã‚’ä½¿ã†
 http://itemy.net/?p=386
 
-CSSƒtƒŒ[ƒ€ƒ[ƒN‚ÌƒXƒXƒ - BULMA‚Ì“±“ü‚ÆŠo‚¦‘‚«
+CSSãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¯ãƒ¼ã‚¯ã®ã‚¹ã‚¹ãƒ¡ - BULMAã®å°å…¥ã¨è¦šãˆæ›¸ã
 https://qiita.com/belq/items/10ec41f656e47ee2b540
 
-Vue‚Ìv-bind:class‚Ì‘‚«•ûEg‚¢•û‚É‚Â‚¢‚Ä‰ğà
+Vueã®v-bind:classã®æ›¸ãæ–¹ãƒ»ä½¿ã„æ–¹ã«ã¤ã„ã¦è§£èª¬
 https://www.e-loop.jp/knowledges/5/
 
-<nav> cc ƒiƒrƒQ[ƒVƒ‡ƒ“‚Å‚ ‚é‚±‚Æ‚ğ¦‚·
+<nav> â€¦â€¦ ãƒŠãƒ“ã‚²ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚ã‚‹ã“ã¨ã‚’ç¤ºã™
 http://www.htmq.com/html5/nav.shtml
 
-HTML‚Ålinkƒ^ƒO‚Æscriptƒ^ƒO‚ğg‚Á‚Äƒtƒ@ƒCƒ‹‚ğ“Ç‚İ‚Ş•û–@y‰SÒŒü‚¯z
+HTMLã§linkã‚¿ã‚°ã¨scriptã‚¿ã‚°ã‚’ä½¿ã£ã¦ãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã‚€æ–¹æ³•ã€åˆå¿ƒè€…å‘ã‘ã€‘
 https://techacademy.jp/magazine/6124
 
-yHTMLzmetaƒ^ƒOFwX-UA-Compatiblex‚Í‚æ‚Á‚Û‚Ç‚Å‚È‚¯‚ê‚Îİ’è‚·‚é•K—v‚Í‚È‚¢‚©‚à‚µ‚ê‚Ü‚¹‚ñB
+ã€HTMLã€‘metaã‚¿ã‚°ï¼šã€X-UA-Compatibleã€ã¯ã‚ˆã£ã½ã©ã§ãªã‘ã‚Œã°è¨­å®šã™ã‚‹å¿…è¦ã¯ãªã„ã‹ã‚‚ã—ã‚Œã¾ã›ã‚“ã€‚
 https://www.creativevillage.ne.jp/2819
 
-CSVƒtƒ@ƒCƒ‹‚Ì•¶šƒR[ƒh‚ğuUTF-8v‚É•ÏŠ·‚·‚é•û–@‚ÍH
+CSVãƒ•ã‚¡ã‚¤ãƒ«ã®æ–‡å­—ã‚³ãƒ¼ãƒ‰ã‚’ã€ŒUTF-8ã€ã«å¤‰æ›ã™ã‚‹æ–¹æ³•ã¯ï¼Ÿ
 https://ad2.zendesk.com/hc/ja/articles/360009714573-CSV%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92-UTF-8-%E3%81%AB%E5%A4%89%E6%8F%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%AF-
 
-CSVƒtƒ@ƒCƒ‹‚ğŠJ‚­‚Æ•¶š—ñ‚ª•ÏŠ·‚³‚ê‚é
+CSVãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ãã¨æ–‡å­—åˆ—ãŒå¤‰æ›ã•ã‚Œã‚‹
 https://ad2.zendesk.com/hc/ja/articles/360001084814
 
-index.html‚¾‚¯‚ÅCSV‚ğŒŸõ‚·‚éƒVƒXƒeƒ€‚ğ‚Â‚­‚é
+index.htmlã ã‘ã§CSVã‚’æ¤œç´¢ã™ã‚‹ã‚·ã‚¹ãƒ†ãƒ ã‚’ã¤ãã‚‹
 https://qiita.com/tamoco/items/87e344c8832c54d95cfb
 
-Vue.js‚Ìv-model‚ğ³‚µ‚­g‚¤
+Vue.jsã®v-modelã‚’æ­£ã—ãä½¿ã†
 https://qiita.com/simezi9/items/c27d69f17d2d08722b3a
 
-HTMLƒ^ƒOƒŠƒtƒ@ƒŒƒ“ƒX <TABLE> cc ƒe[ƒuƒ‹i•\j‚ğì¬‚·‚é
+HTMLã‚¿ã‚°ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ <TABLE> â€¦â€¦ ãƒ†ãƒ¼ãƒ–ãƒ«ï¼ˆè¡¨ï¼‰ã‚’ä½œæˆã™ã‚‹
 http://www.htmq.com/html/table.shtml
 
-Vue‚Ìv-forƒfƒBƒŒƒNƒeƒBƒu‚Ì‘‚«•ûEg‚¢•û‚É‚Â‚¢‚Ä‰ğà
+Vueã®v-forãƒ‡ã‚£ãƒ¬ã‚¯ãƒ†ã‚£ãƒ–ã®æ›¸ãæ–¹ãƒ»ä½¿ã„æ–¹ã«ã¤ã„ã¦è§£èª¬
 https://www.e-loop.jp/knowledges/9/
 
-‚Æ‚Ù‚Ù‚ÌBootstrap 4“ü–å
+ã¨ã»ã»ã®Bootstrap 4å…¥é–€
 http://www.tohoho-web.com/bootstrap/tables.html
 
-yJavaScript“ü–åzfilter‚Å”z—ñ‚Ìƒf[ƒ^‚ğ’Šo‚·‚é•û–@
+ã€JavaScriptå…¥é–€ã€‘filterã§é…åˆ—ã®ãƒ‡ãƒ¼ã‚¿ã‚’æŠ½å‡ºã™ã‚‹æ–¹æ³•
 https://www.sejuku.net/blog/21887
 
-JavaScript‚Åblank”»’è‚ğs‚¤•û–@‚ğŒ»–ğƒGƒ“ƒWƒjƒA‚ª‰ğày‰SÒŒü‚¯z
+JavaScriptã§blankåˆ¤å®šã‚’è¡Œã†æ–¹æ³•ã‚’ç¾å½¹ã‚¨ãƒ³ã‚¸ãƒ‹ã‚¢ãŒè§£èª¬ã€åˆå¿ƒè€…å‘ã‘ã€‘
 https://techacademy.jp/magazine/36398
 
-if•¶‚Å•¡”‚ÌğŒ®‚ğ‘g‚İ‡‚í‚¹‚Ä‚æ‚è•¡G‚ÈğŒ•ªŠò‚ğs‚¤
+ifæ–‡ã§è¤‡æ•°ã®æ¡ä»¶å¼ã‚’çµ„ã¿åˆã‚ã›ã¦ã‚ˆã‚Šè¤‡é›‘ãªæ¡ä»¶åˆ†å²ã‚’è¡Œã†
 https://www.javadrive.jp/javascript/if/index3.html
 
-ƒeƒLƒXƒg“ü—ÍƒtƒH[ƒ€‚Ì‰¡•‚ÍCSS‚Åw’è‚·‚é
+ãƒ†ã‚­ã‚¹ãƒˆå…¥åŠ›ãƒ•ã‚©ãƒ¼ãƒ ã®æ¨ªå¹…ã¯CSSã§æŒ‡å®šã™ã‚‹
 https://www.nishishi.com/css/form-textwidth.html
 
-yHTML“ü–åzƒ{ƒ^ƒ“‚ğg‚¢‚±‚È‚µ‚Ä³‚µ‚­ƒŠƒ“ƒN‚ğì¬‚µ‚Ä‚İ‚æ‚¤I
+ã€HTMLå…¥é–€ã€‘ãƒœã‚¿ãƒ³ã‚’ä½¿ã„ã“ãªã—ã¦æ­£ã—ããƒªãƒ³ã‚¯ã‚’ä½œæˆã—ã¦ã¿ã‚ˆã†ï¼
 https://www.sejuku.net/blog/82466
 
-[CSS] button—v‘f‚ÌƒXƒ^ƒCƒ‹ƒV[ƒgAÅVƒeƒNƒjƒbƒN‚ğ“O’ê‰ğà
+[CSS] buttonè¦ç´ ã®ã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆã€æœ€æ–°ãƒ†ã‚¯ãƒ‹ãƒƒã‚¯ã‚’å¾¹åº•è§£èª¬
 https://coliss.com/articles/build-websites/operation/css/styling-the-good-old-button.html
 
-•\itablej‚Ìì‚è•û‚Æ‘•ü‚Ì•Ï‚¦•ûyHTML•CSSz
+è¡¨ï¼ˆtableï¼‰ã®ä½œã‚Šæ–¹ã¨è£…é£¾ã®å¤‰ãˆæ–¹ã€HTMLï¼†CSSã€‘
 https://saruwakakun.com/html-css/basic/table
 
-CSS‚Å—v‘f‚ğ‰¡•À‚Ñ‚É‚·‚é•û–@(float‚Ædisplay‚Ìg‚¢•û‚ğ‰ğà)
+CSSã§è¦ç´ ã‚’æ¨ªä¸¦ã³ã«ã™ã‚‹æ–¹æ³•(floatã¨displayã®ä½¿ã„æ–¹ã‚’è§£èª¬)
 https://creive.me/archives/13552/
+
+CSSã§ãƒ†ãƒ¼ãƒ–ãƒ«è¡¨ã®ä¸€éƒ¨ã‚’å›ºå®šã—ã¦ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã™ã‚‹æ–¹æ³•
+https://since-inc.jp/blog/8675
+
+ã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆã§ãƒ†ãƒ¼ãƒ–ãƒ«ã®åˆ—å¹…ã‚’è¨­å®šã™ã‚‹ - CSS Tips
+https://www.ipentec.com/document/css-table-col-width-setting
