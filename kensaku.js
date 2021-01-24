@@ -1,5 +1,3 @@
-var row = 'null';
-
 let vueApp = new Vue({
     el: '#app',
     data: {
@@ -14,9 +12,7 @@ let vueApp = new Vue({
         searchKeyword1: null,
         searchKeyword2: null,
         searchKeyword3: null,
-        csvPathList: [
-            {csvPath: 'OFEF歴認2020.csv'}
-        ]
+        csvPathList: [{csvPath: 'OFEF歴認2020.csv'}]
     },
 
     methods: {
@@ -80,27 +76,6 @@ let vueApp = new Vue({
         },
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //検索
         SearchWord2: function () {
 
@@ -118,48 +93,15 @@ let vueApp = new Vue({
                 }  
             });//csvData定義終わり
 
-
-        //動いた
-        // console.log(row);
-        // console.log(this.csvData[1][1]);
-        window.newData = this.csvData;
-        
-        //  window.open(this.csvData[0][2], '_blank');
-
-        $('#kekkaTable tr').click(function(){
-            row = $("tr").index(this);
-            console.log('Row: ' + row); 
-            console.log(newData[1][1]); 
-            console.log(newData[row][1]);
-        });
             
-        
-
+            //クリックしたらリンクを開く
+            linkData = this.csvData;
+            $('#kekkaTable tr').click(function(){
+                row = $("tr").index(this);
+                window.open(linkData[row -1][2], '_blank');
+            });
 
         },//SearchWord2終わり
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         SearchWord3: function () {
@@ -178,6 +120,12 @@ let vueApp = new Vue({
                 }
             });
 
+            //クリックしたらリンクを開く
+            linkData = this.csvData;
+            $('#kekkaTable tr').click(function(){
+                row = $("tr").index(this);
+                 window.open(linkData[row -1][2], '_blank');
+            });
             
         },
         
@@ -197,10 +145,16 @@ let vueApp = new Vue({
                     return true;
                 }
             });
+
+            //クリックしたらリンクを開く
+            linkData = this.csvData;
+            $('#kekkaTable tr').click(function(){
+                row = $("tr").index(this);
+                window.open(linkData[row -1][2], '_blank');
+            });
+
         },
 
-        
-        
 
         // Enterキーで検索
         SearchBoxEnterkey: function (event) { 
@@ -208,6 +162,8 @@ let vueApp = new Vue({
             this.kensaku();
         }
     },
+
+
 
     mounted: function () {
         if (location.href.indexOf('file') != -1) {
@@ -225,35 +181,5 @@ let vueApp = new Vue({
     }
 
 
-    
 
-})
-
-//---------------------------------------------------------------------
-//csvファイルの再読み込み
-
-function regetCSVFile() {
-    var xhr = new XMLHttpRequest();
-    xhr.onload = function() {
-    createArray(xhr.responseText);
-    };
- 
-    xhr.open("get", "OFEF歴認2020.csv", true);
-    xhr.send(null);
-}
-
-regetCSVFile();
-function createXMLHttpRequest() {
-    var XMLhttpObject = null;
-    XMLhttpObject = new XMLHttpRequest();
-    return XMLhttpObject;
-}
- 
-function createArray(csvData) {
-    var tempArray = csvData.split("\n");
-    window.csvArray = new Array();
-    for(var i = 0; i < tempArray.length; i++){
-    csvArray[i] = tempArray[i].split(",");
-    }
-    // console.log(csvArray[1][3]);        
-}
+})//全体終わり
