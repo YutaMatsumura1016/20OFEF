@@ -118,9 +118,8 @@
                     </label>
                 </div>
 
-                <div class = "kekkaTable">
-                    <!-- <table class = "bg-white table is-bordered is-narrow is-hoverable is-fullwidth table-responsive"> 表の詳細を指定 -->
-                    <table class = "kekkaTable">
+                <div class = "kekkaTable" >
+                    <table class = "kekkaTable" id = "kekkaTable">
                         <thead> <!--表のヘッダ行-->
                             <tr>
                                 <th class = "toprow" v-for = "col in csvCols"> {{col}} </th>
@@ -141,7 +140,7 @@
     </section>
 
 <!-------------------------------------------------------------------------------------->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script type = "text/javascript" src = "kensaku.js"></script>
 </body>

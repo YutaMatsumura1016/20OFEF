@@ -1,3 +1,5 @@
+var row = 'null';
+
 let vueApp = new Vue({
     el: '#app',
     data: {
@@ -78,28 +80,31 @@ let vueApp = new Vue({
         },
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         //検索
-        SearchWord: function () {
-            const vueThis = this;
-
-            //colIndex = 選択されたインデックス(selectedCol)
-            const colIndex1 = vueThis.csvCols.indexOf(vueThis.selectedCol1);
-            const colIndex2 = vueThis.csvCols.indexOf(vueThis.selectedCol2);
-            const colIndex3 = vueThis.csvCols.indexOf(vueThis.selectedCol3);
-
-            this.csvData = this.allCsvData.filter(function (item, index) {
-                if(!item[colIndex1] ||!item[colIndex2] || !item[colIndex3]){
-                    return false;
-                }
-                if(item[colIndex1].includes(vueThis.searchKeyword1) && item[colIndex2].includes(vueThis.searchKeyword2) && item[colIndex3].includes(vueThis.searchKeyword3)) {
-                    return true;
-                }
-            });
-            console.log(this.csvData);
-        },
-
         SearchWord2: function () {
-            const vueThis = this;
+
+            var vueThis = this;
 
             //colIndex = 選択されたインデックス(selectedCol)
             const colIndex1 = vueThis.csvCols.indexOf(vueThis.selectedCol1);
@@ -110,10 +115,52 @@ let vueApp = new Vue({
                 }
                 if(item[colIndex1].includes(vueThis.searchKeyword1)) {
                     return true;
-                }
-            });
-            console.log(this.csvData);
-        },
+                }  
+            });//csvData定義終わり
+
+
+        //動いた
+        // console.log(row);
+        // console.log(this.csvData[1][1]);
+        window.newData = this.csvData;
+        
+        //  window.open(this.csvData[0][2], '_blank');
+
+        $('#kekkaTable tr').click(function(){
+            row = $("tr").index(this);
+            console.log('Row: ' + row); 
+            console.log(newData[1][1]); 
+            console.log(newData[row][1]);
+        });
+            
+        
+
+
+        },//SearchWord2終わり
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         SearchWord3: function () {
             const vueThis = this;
@@ -130,10 +177,32 @@ let vueApp = new Vue({
                     return true;
                 }
             });
-            console.log(this.csvData);
+
+            
+        },
+        
+        SearchWord: function () {
+            const vueThis = this;
+
+            //colIndex = 選択されたインデックス(selectedCol)
+            const colIndex1 = vueThis.csvCols.indexOf(vueThis.selectedCol1);
+            const colIndex2 = vueThis.csvCols.indexOf(vueThis.selectedCol2);
+            const colIndex3 = vueThis.csvCols.indexOf(vueThis.selectedCol3);
+
+            this.csvData = this.allCsvData.filter(function (item, index) {
+                if(!item[colIndex1] ||!item[colIndex2] || !item[colIndex3]){
+                    return false;
+                }
+                if(item[colIndex1].includes(vueThis.searchKeyword1) && item[colIndex2].includes(vueThis.searchKeyword2) && item[colIndex3].includes(vueThis.searchKeyword3)) {
+                    return true;
+                }
+            });
         },
 
-        // 日本語入力中のEnterキー操作は無効にする
+        
+        
+
+        // Enterキーで検索
         SearchBoxEnterkey: function (event) { 
             if (event.keyCode !== 13) { return }
             this.kensaku();
@@ -145,7 +214,7 @@ let vueApp = new Vue({
             this.isHttpReq = false;
             setTimeout(function () {
                 alert('ファイルが見つかりません');
-            }.bind(this), 500);
+            }.bind(this), 100);
             return
         } else {
             this.isHttpReq = true;
@@ -155,4 +224,36 @@ let vueApp = new Vue({
         }
     }
 
+
+    
+
 })
+
+//---------------------------------------------------------------------
+//csvファイルの再読み込み
+
+function regetCSVFile() {
+    var xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+    createArray(xhr.responseText);
+    };
+ 
+    xhr.open("get", "OFEF歴認2020.csv", true);
+    xhr.send(null);
+}
+
+regetCSVFile();
+function createXMLHttpRequest() {
+    var XMLhttpObject = null;
+    XMLhttpObject = new XMLHttpRequest();
+    return XMLhttpObject;
+}
+ 
+function createArray(csvData) {
+    var tempArray = csvData.split("\n");
+    window.csvArray = new Array();
+    for(var i = 0; i < tempArray.length; i++){
+    csvArray[i] = tempArray[i].split(",");
+    }
+    // console.log(csvArray[1][3]);        
+}
