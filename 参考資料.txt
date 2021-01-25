@@ -210,3 +210,18 @@ https://oshiete.goo.ne.jp/qa/1262994.html
 
 table要素をスマートフォン画面の幅に合わせる時に使うCSS
 https://webcommu.net/phone-table-css/
+
+table内で画像と文字をセンター合わせするには？
+https://oshiete.goo.ne.jp/qa/8942394.html
+
+TAG index 画像でリンクする
+https://www.tagindex.com/html_tag/link/a_img.html
+
+(K)CSSでimg画像を中央に表示させる8個の方法まとめ
+https://webkcampus.com/201501/949/
+
+表（テーブル）の中に画像を表示する方法
+http://mbsupport.dip.jp/hp/hpt09.htm
+
+footerの位置をページの最下部に固定する【学習メモ】
+https://qiita.com/bp_pk/items/f0d4910bb0048c22f15a
