@@ -370,7 +370,7 @@ background: #cccccce1;
 	}
 	.site-header{
 		position: fixed;
-		margin-top: 2%;
+		margin-top: -16%;;
 		margin-left: 2%;
 		max-width: 1200px;
 		min-width: 900px;
@@ -419,25 +419,16 @@ background: #cccccce1;
 
 
 	.imaara{
-		text-align: center;
-		margin-bottom: 10%;
-		display: flex;
-		margin-left: 45%;
-		min-width: 300px;
-		opacity: 0;
+		display: none;
 	}
-	.imaara img{
-		width: 15%;
-		height: auto;
-	}
-
 	.title{
 		font-size: 40px;
 		color: #333333;
 		font-family: 'Noto Sans JP', sans-serif;
 		font-weight: 400;
-		margin-top: 10%;
+		margin-top: 20%;
 		margin-left: 3%;
+		margin-right: 0px;
 		margin-bottom: 20%;
 	}
 	.subTitle{
@@ -445,7 +436,7 @@ background: #cccccce1;
 		font-family: 'Noto Sans JP', sans-serif;
 		font-weight: 400;
 		color: #333333;
-		letter-spacing: 3px;
+		letter-spacing: 0px;
 		margin-left: 5%;
 		margin-top: 10%;
 		margin-bottom: 0%;
@@ -465,14 +456,16 @@ background: #cccccce1;
 	}
 	.allContents{
 		margin-left: 5%;
-		font-size: 25px;
-		color: #333333;
+		font-size: 22px;
 		font-family: 'Noto Sans JP', sans-serif;
 		font-weight: 500;
-		line-height: 50px;
+		line-height: 43px;
 		margin-top: 0%;
 		margin-bottom: 0%;
 		list-style: none;
+	}
+	.allContents a{
+		color: #333333;
 	}
 
 	.erabu{
