@@ -225,3 +225,6 @@ http://mbsupport.dip.jp/hp/hpt09.htm
 
 footerの位置をページの最下部に固定する【学習メモ】
 https://qiita.com/bp_pk/items/f0d4910bb0048c22f15a
+
+CSSでフッターを画面下部に固定する
+http://webnonotes.com/css/footer/
