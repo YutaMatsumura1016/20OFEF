@@ -55,6 +55,12 @@ let vueApp = new Vue({
                     vueThis.allCsvData = results.data.slice(1);
                 }
             });
+
+            //検索前はテーブルを非表示に
+            obj = document.getElementsByClassName("kekkaTable")[0];
+            obj.style.opacity = 0; 
+            obj = document.getElementsByClassName("hitsu")[0];
+            obj.style.opacity = 0; 
         },
 
 
@@ -101,6 +107,13 @@ let vueApp = new Vue({
                 window.open(linkData[row -1][2], '_blank');
             });
 
+            //検索結果を表示する
+            kekkaTable_opacity = document.getElementsByClassName("kekkaTable")[0];
+            kekkaTable_opacity.style.opacity = 1; 
+            hitsu_opacity = document.getElementsByClassName("hitsu")[0];
+            hitsu_opacity.style.opacity = 1; 
+
+
         },//SearchWord2終わり
 
 
@@ -126,6 +139,12 @@ let vueApp = new Vue({
                 row = $("tr").index(this);
                  window.open(linkData[row -1][2], '_blank');
             });
+
+            //検索結果を表示する
+            kekkaTable_opacity = document.getElementsByClassName("kekkaTable")[0];
+            kekkaTable_opacity.style.opacity = 1; 
+            hitsu_opacity = document.getElementsByClassName("hitsu")[0];
+            hitsu_opacity.style.opacity = 1; 
             
         },
         
@@ -152,6 +171,12 @@ let vueApp = new Vue({
                 row = $("tr").index(this);
                 window.open(linkData[row -1][2], '_blank');
             });
+
+            //検索結果を表示する
+            kekkaTable_opacity = document.getElementsByClassName("kekkaTable")[0];
+            kekkaTable_opacity.style.opacity = 1; 
+            hitsu_opacity = document.getElementsByClassName("hitsu")[0];
+            hitsu_opacity.style.opacity = 1; 
 
         },
 
@@ -183,3 +208,11 @@ let vueApp = new Vue({
 
 
 })//全体終わり
+
+
+$(function(){
+    var $ftr = $('#site-footer');
+    if( window.innerHeight > $ftr.offset().top + $ftr.outerHeight() ){
+         $ftr.attr({'style': 'position:fixed; top:' + (window.innerHeight - $ftr.outerHeight()) + 'px;' });
+    }
+});

@@ -29,8 +29,8 @@ https://note.com/ocha_green/n/n4f2200399859
 ・コミットは「ローカルリポジトリを更新」
 ・プッシュは「ローカルリポジトリの内容をリモートサーバに更新」
 
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+がないとメディアクエリがうまく動かない
 
 ・https://yutamatsumura1016.github.io/20OFEF/
 
