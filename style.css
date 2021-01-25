@@ -369,11 +369,17 @@ background: #cccccce1;
 		height: auto;
 	}
 
+	.footer{
+		position: fixed;
+		bottom: 0px;
+	}
 	.site-footer{
 		position: fixed;
 		bottom: 0px;
 	}
 	.underTabs{
+		position: fixed;
+		bottom: 0px;
 		margin:0px;
 		width: 100%;
 		table-layout: fixed;
