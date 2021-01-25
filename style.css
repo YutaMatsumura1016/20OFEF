@@ -338,6 +338,7 @@ background: #cccccce1;
 @media screen and (min-width: 1px) and (max-width: 599px){
 	body{
 		margin:0px;
+		
 	};
 
 	.tabs{
@@ -358,7 +359,7 @@ background: #cccccce1;
 	}
 	.site-header{
 		position: fixed;
-		margin-top: 0%;
+		margin-top: 2%;
 		margin-left: 2%;
 		max-width: 1200px;
 		min-width: 900px;
@@ -368,6 +369,10 @@ background: #cccccce1;
 		height: auto;
 	}
 
+	.site-footer{
+		position: absolute;
+		bottom: 0px;
+	}
 	.underTabs{
 		margin:0px;
 		width: 100%;
@@ -388,12 +393,11 @@ background: #cccccce1;
 		padding: 2px 5px;
 		align-items: center;	
 	}
-
 	.underTabsSpace img{
 		opacity: 0.5;
 	}
 	.underTabsSpaceNow img{
-		opacity: 0.8;
+		opacity: 0.9;
 	}
 
 

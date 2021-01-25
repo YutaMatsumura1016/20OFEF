@@ -211,9 +211,20 @@ let vueApp = new Vue({
 
 
 // 'kensaku.js'って名前にしたけどめんどくさいからフッターも入れる
+// $(function(){
+//     var $ftr = $('#site-footer');
+//     if( window.innerHeight > $ftr.offset().top + $ftr.outerHeight() ){
+//          $ftr.attr({'style': 'position:fixed; top:' + (window.innerHeight - $ftr.outerHeight()) + 'px;' });
+//     }
+// });
+
+
 $(function(){
-    var $ftr = $('#site-footer');
-    if( window.innerHeight > $ftr.offset().top + $ftr.outerHeight() ){
-         $ftr.attr({'style': 'position:fixed; top:' + (window.innerHeight - $ftr.outerHeight()) + 'px;' });
-    }
-});
+    //フッターを最下部に固定
+        var $footer = $('#site-footer');
+        if(window.innerHeight > $footer.offset().top + $footer.outerHeight() ) {
+            $footer.attr({'style': 'position:fixed; top:' + (window.innerHeight - $footer.outerHeight()) + 'px;' });
+        }
+    })
+
+
