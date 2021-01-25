@@ -210,6 +210,7 @@ let vueApp = new Vue({
 })//全体終わり
 
 
+// 'kensaku.js'って名前にしたけどめんどくさいからフッターも入れる
 $(function(){
     var $ftr = $('#site-footer');
     if( window.innerHeight > $ftr.offset().top + $ftr.outerHeight() ){
