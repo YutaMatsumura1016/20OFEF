@@ -228,3 +228,15 @@ https://qiita.com/bp_pk/items/f0d4910bb0048c22f15a
 
 CSSでフッターを画面下部に固定する
 http://webnonotes.com/css/footer/
+
+HTMLクイックリファレンス　スタイルシートリファレンス
+http://www.htmq.com/style/position.shtml
+
+PWAのSprach Screen対応メモ
+https://qiita.com/fluflufluffy/items/506422821c675b61c8fc
+
+【jQuery】要素の表示・非表示について (show, hide, toggle)
+https://www.task-notes.com/entry/20150112/1420994026
+
+jQuery【 CSS 】display を使用した表示・非表示に関するサンプル
+https://programmercollege.jp/column/9757/
