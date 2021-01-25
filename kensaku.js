@@ -55,12 +55,6 @@ let vueApp = new Vue({
                     vueThis.allCsvData = results.data.slice(1);
                 }
             });
-
-            //検索前はテーブルを非表示に
-            obj = document.getElementsByClassName("kekkaTable")[0];
-            obj.style.opacity = 0; 
-            obj = document.getElementsByClassName("hitsu")[0];
-            obj.style.opacity = 0; 
         },
 
 
@@ -107,13 +101,13 @@ let vueApp = new Vue({
                 window.open(linkData[row -1][2], '_blank');
             });
 
-            //検索結果を表示する
-            kekkaTable_opacity = document.getElementsByClassName("kekkaTable")[0];
-            kekkaTable_opacity.style.opacity = 1; 
-            hitsu_opacity = document.getElementsByClassName("hitsu")[0];
-            hitsu_opacity.style.opacity = 1; 
-
-
+             //検索結果を表示する
+            $(function() {
+                    $('#kekkaTable').css("display", "block");
+                });
+            $(function() {
+                $('#hitsu').css("display", "block");
+            });    
         },//SearchWord2終わり
 
 
@@ -141,10 +135,12 @@ let vueApp = new Vue({
             });
 
             //検索結果を表示する
-            kekkaTable_opacity = document.getElementsByClassName("kekkaTable")[0];
-            kekkaTable_opacity.style.opacity = 1; 
-            hitsu_opacity = document.getElementsByClassName("hitsu")[0];
-            hitsu_opacity.style.opacity = 1; 
+             $(function() {
+                $('#kekkaTable').css("display", "block");
+            });
+        $(function() {
+            $('#hitsu').css("display", "block");
+        });
             
         },
         
@@ -172,11 +168,13 @@ let vueApp = new Vue({
                 window.open(linkData[row -1][2], '_blank');
             });
 
-            //検索結果を表示する
-            kekkaTable_opacity = document.getElementsByClassName("kekkaTable")[0];
-            kekkaTable_opacity.style.opacity = 1; 
-            hitsu_opacity = document.getElementsByClassName("hitsu")[0];
-            hitsu_opacity.style.opacity = 1; 
+             //検索結果を表示する
+             $(function() {
+                $('#kekkaTable').css("display", "block");
+            });
+            $(function() {
+                $('#hitsu').css("display", "block");
+            });
 
         },
 
@@ -211,14 +209,6 @@ let vueApp = new Vue({
 
 
 // 'kensaku.js'って名前にしたけどめんどくさいからフッターも入れる
-// $(function(){
-//     var $ftr = $('#site-footer');
-//     if( window.innerHeight > $ftr.offset().top + $ftr.outerHeight() ){
-//          $ftr.attr({'style': 'position:fixed; top:' + (window.innerHeight - $ftr.outerHeight()) + 'px;' });
-//     }
-// });
-
-
 $(function(){
     //フッターを最下部に固定
         var $footer = $('#site-footer');

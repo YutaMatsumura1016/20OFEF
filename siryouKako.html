@@ -117,13 +117,13 @@
 <!-------------------------------------------------------------------------------------->
 <!--ここから先検索結果-->
             <div style = "padding: 0 20px 0 20px;"> <!--検索結果の表-->
-                <div class = "hitsu">
+                <div class = "hitsu" id = "hitsu">
                     <label v-if = "csvData.length > 0">
                         検索結果 : {{csvData.length}}件
                     </label>
                 </div>
 
-                <div class = "kekkaTable" >
+                <div>
                     <table class = "kekkaTable" id = "kekkaTable">
                         <thead> <!--表のヘッダ行-->
                             <tr>

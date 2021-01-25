@@ -60,12 +60,18 @@ a{
 .kekkaTable{
 	width: 100%;
 	color: #000000;
-	background-color: #ffffff88;
+	background-color: #ffffffb9;
 	text-align: center;
 	border: 1px;
 	border-collapse: collapse;
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 300;
+}
+#kekkaTable{
+	display: none;
+}
+#hitsu{
+	display: none;
 }
 table th, table td {
 	border: solid 1px black;
@@ -287,7 +293,7 @@ background: #cccccce1;
 		margin-left: 0%;
 		margin-top: 0%;
 		margin-bottom: 0;
-		width: 70%;
+		width: 80%;
 		height: 2px;
 		background-color: #666666;
 		border: none;
@@ -295,10 +301,10 @@ background: #cccccce1;
 	.allContents{
 		margin-left: 12%;
 		color: #333333;
-		font-size: 20px;
+		font-size: 15px;
 		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 400;
-		line-height: 40px;
+		font-weight: 300;
+		line-height: 30px;
 		margin-bottom: 3%;
 		list-style: none;
 	}
@@ -458,7 +464,7 @@ background: #cccccce1;
 		margin-left: 5%;
 		font-size: 22px;
 		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 500;
+		font-weight: 400;
 		line-height: 43px;
 		margin-top: 0%;
 		margin-bottom: 0%;
@@ -501,6 +507,7 @@ background: #cccccce1;
 		font-weight: 400;
 		background: #ffffffb9;
 	}
+
 }
 
 
