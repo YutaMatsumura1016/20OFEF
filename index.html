@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang = "ja">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta name="apple-mobile-web-app-status-bar-style" content = "#ffffff">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 
 <head>
 	<meta charset="UTF-8">
 	<title>20OFEF</title>
 	<link rel = "manifest" href = "./manifest.json">
 	<link rel = "stylesheet" href = "style.css">
-	<link href = "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href = "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap">
 	<!-- iOSはmanifest.json非対応らしい -->
-	<link rel = "apple-touch-icon" href = "icons/apple-touch-icon.png" sizes = "180x180">
+	<link rel = "manifest" href  ="manifest.webmanifest" />
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -127,6 +127,10 @@
 		});
 
 	}
+	</script>
+	<script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.6/pwacompat.min.js"
+    integrity="sha384-GOaSLecPIMCJksN83HLuYf9FToOiQ2Df0+0ntv7ey8zjUHESXhthwvq9hXAZTifA"
+	crossorigin="anonymous">
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
