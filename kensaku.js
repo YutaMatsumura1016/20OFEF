@@ -147,7 +147,7 @@ let vueApp = new Vue({
 
             //検索結果を表示する
             $(function() {
-                $('#kensakusita').css("display", "block");
+                $('.kensakusita').css("display", "block");
             });
 
             //もともと出ていた文字を消す
@@ -224,10 +224,8 @@ let vueApp = new Vue({
         }
     }
 
-
-
-})//全体終わり
-
+  
+});//全体終わり
 
 // 'kensaku.js'って名前にしたけど分けるのめんどくさいからフッターも入れる
 $(function(){
@@ -236,4 +234,5 @@ $(function(){
     if(window.innerHeight > $footer.offset().top + $footer.outerHeight() ) {
         $footer.attr({'style': 'position:fixed; top:' + (window.innerHeight - $footer.outerHeight()) + 'px;' });
     }
-})
+});
+
