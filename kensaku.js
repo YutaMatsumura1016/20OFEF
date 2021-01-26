@@ -183,7 +183,7 @@ let vueApp = new Vue({
 
             //検索結果を表示する
             $(function() {
-                $('#kensakusita').css("display", "block");
+                $('.kensakusita').css("display", "block");
             });
 
             //もともと出ていた文字を消す
