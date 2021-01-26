@@ -1,30 +1,95 @@
+/* 全体開始 */
 
+/* ---------------------------------------------------------------------- */
+/* 共通のスタイル */
 
+/* ボディ */
+body{
+	background-image: url(images/隈構_白掛け.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* リンク色 */
 a:link { color: #000000; }
 a:visited { color: #000000; }
 a:hover { color: #EE1111; }
 a:active { color: #AA1111; }
 
- a.tabsColor:link {
+a.tabsColor:link {
 	color: #ffffff;
 	text-decoration: none;
 	}
- a.tabsColor:visited {
-	 color: #ffffff;
-	 text-decoration: none;}
- a.tabsColor:hover {
-	 color: #0066ee;
-	 text-decoration: none;
+a.tabsColor:visited {
+	color: #ffffff;
+	text-decoration: none;}
+a.tabsColor:hover {
+	color: #0066ee;
+	text-decoration: none;
 	}
- a.tabsColor:active {
-	 color: #0066ee;
-	 text-decoration: none;
-	 }
-
+a.tabsColor:active {
+	color: #0066ee;
+	text-decoration: none;
+	}
 a{
 	text-decoration: none;
 }
 
+/* ヘッダー */
+.header{
+	display: flex;
+}
+.site-header{
+	position: fixed;
+	max-width: 1200px;
+	min-width: 900px;
+}
+.site-header img{
+	width: 20%;
+	height: auto;
+}
+
+/* フッター */
+.footer{
+	position: fixed;
+	bottom: 0px;
+}
+.site-footer{
+	position: fixed;
+	bottom: 0px;
+}
+.underTabs{
+	position: fixed;
+	bottom: 0px;
+	margin: 0px;
+	width: 100%;
+	table-layout: fixed;
+	word-break: break-word;
+	border-collapse: collapse;	
+}
+.underTabs th{
+	padding: 1%;
+	margin: 0px;
+	font-size: 100%;
+	font-weight: 700;
+	background-color: #ffffffe7;
+	border: solid 1.5px #6666666c;
+}
+.underTabs th a{
+	height: 100%;
+	padding: 2px 5px;
+	align-items: center;	
+}
+.underTabsSpace img{
+	opacity: 0.5;
+}
+.underTabsSpaceNow img{
+	opacity: 0.9;
+}
+
+/* 右上のタブメニュー */
 .tabs{
 	position: fixed;
 	display: flex;
@@ -42,15 +107,161 @@ a{
 .tabsSpace{
 	margin-left: 20px;
 }
-.c-button {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	border: 0;
-	border-radius: 0;
-	background: #ccc;
+
+/* ハンバーガーメニュー */
+.menuHidden{ 
+	display: none; 
 }
+.menuOpen {
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	height: 45px;
+	width: 45px;
+	z-index: 100;
+	background-color: #999999bb;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.menuOpen span,
+.menuOpen span:before,
+.menuOpen span:after {
+	content: '';
+	display: block;
+	height: 1.5px;
+	width: 25px;
+	background-color: #ffffff99;
+	transition: 0.1s;
+	position: absolute;
+}
+.menuOpen span:before {
+	bottom: 10px;
+}
+.menuOpen span:after {
+	top: 10px;
+}
+#menuCheck:checked ~ .menuOpen span {
+	background-color: rgba(255, 255, 255, 0);
+}
+#menuCheck:checked ~ .menuOpen span::before {
+	bottom: 0;
+	transform: rotate(45deg);
+}
+#menuCheck:checked ~ .menuOpen span::after {
+   	top: 0;
+   	transform: rotate(-45deg);
+}
+.humburgerContent {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 100%;
+	z-index: 99;
+	background-color: #666666b6;
+	transition: all 0.2s;
+}
+.humburgerContent ul {
+	padding: 70px 10px 0;
+}
+.humburgerContent ul li {
+	border-bottom: solid 1px #ffffffbb;
+	margin-bottom: 1.5%;
+	list-style: none;
+}
+.humburgerContent ul li a {
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 300;
+	box-sizing: border-box;
+	color:#ffffffd7;
+	text-decoration: none;
+	padding: 9px 15px 10px 0;
+	position: relative;
+}
+.humburgerContent ul li a::before {
+	content: "";
+	width: 7px;
+	height: 7px;
+	border-top: solid 2px #ffffffbb;
+	border-right: solid 2px #ffffffbb;
+	transform: rotate(45deg);
+	position: absolute;
+	right: 11px;
+	top: 16px;
+}
+/* 画面が小さいときはメニューを大きく表示 */
+@media screen and (min-width: 830px){
+	#menuCheck:checked ~ .humburgerContent {
+		left: 70%;
+	}
+}
+@media screen and (max-width: 829px){
+	#menuCheck:checked ~ .humburgerContent {
+		left: 30%;
+	}
+}
+/* ハンバーガーメニューここまで */
+
+
+/* 文字の共通設定 */
+.title{
+	color: #333333;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+}
+.subTitle{
+	color: #333333;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	list-style: none;
+	display: block;
+}
+.subTitle::-webkit-details-marker {
+	display: none;
+}
+.hrSubTitle{
+	background-color: #666666;
+	border: none;
+}
+.allContents{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 300;
+	list-style: none;
+}
+.allContents a{
+	color: #333333;
+}
+
 	
+/* 検索の共通設定 */
+.erabu{
+	float: left;
+	border-radius: 6px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 300;
+	background: #ffffff88;
+}
+.nyuryoku{
+	border-radius: 6px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 300;
+	background: #ffffff88;
+}
+.kensakuBtn{
+	border-radius: 6px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	background: #ffffff88;
+}
+.kensakusita{
+	display: none;
+}
 .kekkaTable{
 	width: 100%;
 	margin: 0px;
@@ -71,142 +282,38 @@ table th, table td {
 	display: none;
 }
 .toprow{
-position: sticky;
-top: 8%;
-background: #cccccce1;
+	position: sticky;
+	top: 8%;
+	background: #cccccce1;
 }
 
+/* ---------------------------------------------------------------------- */
 
-@media screen and (min-width: 1px) and (max-width: 1360px){
+/* ここから先メディアクエリ */
+
+/* ---------------------------------------------------------------------- */
+/* 各メニューの表示設定 */
+/* 下のタブ */
+@media screen and (min-width: 1px) and (max-width: 599px){
 	.tabs{
 		display: none;
 	}
+	.humburgerMenu{
+		display: none;
+	}
 }
-/* ---------------------------------------------------------------------- */
-/* 1360pxまではハンバーガーメニューを出す */
+/* ハンバーガー */
 @media screen and (min-width: 600px) and (max-width: 1360px){
-	.menuHidden { 
-		display: none; 
+	.tabs{
+		display: none;
 	}
 	.site-footer{
 		display: none;
 	}
-
-	.menuOpen {
-		position: fixed;
-		justify-content: center;
-		align-items: center;
-		top: 10px;
-		right: 10px;
-		display: flex;
-		height: 45px;
-		width: 45px;
-		z-index: 100;
-		background-color: #999999bb;
-		border-radius: 3px;
-		cursor: pointer;
-	}
-
-
-	.menuOpen span,
-	.menuOpen span:before,
-	.menuOpen span:after {
-		content: '';
-		display: block;
-		height: 1.5px;
-		width: 25px;
-		background-color: #ffffff99;
-		transition: 0.1s;
-		position: absolute;
-	}
-
-
-	.menuOpen span:before {
-		bottom: 10px;
-	}
-	.menuOpen span:after {
-		top: 10px;
-	}
-
-	#menuCheck:checked ~ .menuOpen span {
-   		background-color: rgba(255, 255, 255, 0);
-	}
-	#menuCheck:checked ~ .menuOpen span::before {
- 		bottom: 0;
-   		transform: rotate(45deg);
-	}
-	#menuCheck:checked ~ .menuOpen span::after {
-    	top: 0;
-    	transform: rotate(-45deg);
-	}
-
-
-	.humburgerContent {
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		top: 0;
-		left: 100%;
-		z-index: 99;
-		background-color: #666666b6;
-		transition: all 0.2s;
-	}
-
-
-	@media screen and (min-width: 830px){
-		#menuCheck:checked ~ .humburgerContent {
-			left: 70%;
-		}
-	}
-
-	@media screen and (max-width: 829px){
-		#menuCheck:checked ~ .humburgerContent {
-			left: 30%;
-		}
-	}
-
-	.humburgerContent ul {
-		padding: 70px 10px 0;
-	}
-	.humburgerContent ul li {
-		border-bottom: solid 1px #ffffffbb;
-		margin-bottom: 1.5%;
-		list-style: none;
-	}
-	.humburgerContent ul li a {
-		display: block;
-		width: 100%;
-		font-size: 18px;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 300;
-		box-sizing: border-box;
-		color:#ffffffd7;
-		text-decoration: none;
-		padding: 9px 15px 10px 0;
-		position: relative;
-	}
-	.humburgerContent ul li a::before {
-		content: "";
-		width: 7px;
-		height: 7px;
-		border-top: solid 2px #ffffffbb;
-		border-right: solid 2px #ffffffbb;
-		transform: rotate(45deg);
-		position: absolute;
-		right: 11px;
-		top: 16px;
-	}
 }
-
-
+/* 上のタブ */
 @media screen and (min-width: 1361px){
-	.menuOpen {
-		display: none;
-	}
-	#menuCheck {
-		display: none;
-	 }
-	.humburgerContent {
+	.humburgerMenu{
 		display: none;
 	}
 	.site-footer{
@@ -214,40 +321,22 @@ background: #cccccce1;
 	}
 }
 
-/* ハンバーガーメニューここまで */
-
-
-
+/* ---------------------------------------------------------------------- */
+/* 端末ごとの表示設定 */
 /*PC*/
 @media screen and (min-width: 600px){
-	body{
-		background-image: url(images/隈構_白掛け.png);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
-	}
-
-	.header{
-		display: flex;
-	}
+	/* ヘッダーの設定 */
 	.site-header{
-		position: fixed;
 		margin-top: 0.5%;
 		margin-left: 2%;
-		max-width: 1200px;
-		min-width: 900px;
-	}
-	.site-header img{
-		width: 20%;
-		height: auto;
 	}
 
+	/* 画面上部の画像設定 */
 	.imaara{
 		text-align: center;
 		margin-bottom: 0%;
 		display: flex;
-		margin-left: 45%;
+		margin-left: 46%;
 		min-width: 300px;
 	}
 	.imaara img{
@@ -255,29 +344,19 @@ background: #cccccce1;
 		height: auto;
 	}
 
+	/* 文字設定 */
 	.title{
 		font-size: 50px;
-		color: #333333;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 400;
 		margin-top: 5%;
 		margin-left: 5%;
 		margin-bottom: 7%;
 	}
 	.subTitle{
 		font-size: 40px;
-		color: #333333;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 400;
 		letter-spacing: 3px;
 		margin-top: 3%;
 		margin-left: 12%;
 		margin-bottom: 1%;
-		list-style: none;
-		display: block;
-	}
-	.subTitle::-webkit-details-marker {
-		display: none;
 	}
 	.hrSubTitle{
 		margin-left: 0%;
@@ -285,46 +364,33 @@ background: #cccccce1;
 		margin-bottom: 0;
 		width: 80%;
 		height: 2px;
-		background-color: #666666;
-		border: none;
 	}
 	.allContents{
 		margin-left: 12%;
-		color: #333333;
 		font-size: 15px;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 300;
 		line-height: 30px;
 		margin-bottom: 3%;
-		list-style: none;
 	}
 	.kensakusuru{
 		margin-top: -5%;
 		margin-left: 8%;
 	}
+
+	/* 検索設定 */
 	.erabu{
-		float: left;
 		width: 100px;
 		height: 30px;
 		margin-top: 0%;
 		margin-left: 0%;
 		margin-right: 1%;
-		border-radius: 6px;
 		font-size: 15px;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 300;
-		background: #ffffff88;
 	}
 	.nyuryoku{
 		width: 300px;
 		height: 26px;
 		margin-top: 0%;
 		margin-bottom: 0%;
-		border-radius: 6px;
 		font-size: 15px;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 300;
-		background: #ffffff88;
 	}
 	.kensakuBtn{
 		width: 50px;
@@ -332,153 +398,73 @@ background: #cccccce1;
 		margin-top: -2%;
 		margin-bottom: 1%;
 		margin-left: 365px;
-		border-radius: 6px;
 		font-size: 15px;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 400;
-		background: #ffffff88;
-	}
-	.kensakusita{
-		display: none;
 	}
 }
 
+/* ---------------------------------------------------------------------- */
 /*スマホ */
 @media screen and (min-width: 1px) and (max-width: 599px){
+	/* 全体設定 */
 	body{
-		margin:0px;
-		background-image: url(images/隈構_白掛け.png);
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
+		margin: 0px;
 		padding-bottom: 20%;	
 	};
 
-	.tabs{
-		display: none;
-	}
-	.menuHidden {
-		display: none; 
-	}
-	#menuCheck {
-		display: none;
-	 }
-	.humburgerContent {
-		display: none;
-	}
-
-	.header{
-		display: flex;
-	}
+	/* ヘッダー設定 */
 	.site-header{
-		position: fixed;
-		margin-top: -16%;;
-		margin-left: 2%;
-		max-width: 1200px;
-		min-width: 900px;
+		/* これがないと下が動かない...？ */
 	}
 	.site-header img{
-		width: 20%;
-		height: auto;
+		margin-top: -0.5%;
+		margin-left: 1.5%;
 	}
 
-	.footer{
-		position: fixed;
-		bottom: 0px;
-	}
-	.site-footer{
-		position: fixed;
-		bottom: 0px;
-	}
-	.underTabs{
-		position: fixed;
-		bottom: 0px;
-		margin: 0px;
-		width: 100%;
-		table-layout: fixed;
-		word-break: break-word;
-		border-collapse: collapse;	
-	}
-	.underTabs th{
-		padding: 1%;
-		margin: 0px;
-		font-size: 100%;
-		font-weight: 700;
-		background-color: #ffffffe7;
-		border: solid 1.5px #6666666c;
-	}
-	.underTabs th a{
-		height: 100%;
-		padding: 2px 5px;
-		align-items: center;	
-	}
-	.underTabsSpace img{
-		opacity: 0.5;
-	}
-	.underTabsSpaceNow img{
-		opacity: 0.9;
-	}
-
-
+	/* 狭いので画像は表示させない */
 	.imaara{
-		display: none;
+		/* これがないと下が動かない...？ */
 	}
+	.imaara img{
+		opacity: 0;
+	}
+
+	/* 文字設定 */
 	.title{
-		font-size: 40px;
-		color: #333333;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 400;
-		margin-top: 20%;
-		margin-left: 7%;
+		font-size: 200%;
+		margin-top: 15%;
+		margin-left: 5%;
 		margin-right: 0px;
-		margin-bottom: 20%;
+		margin-bottom: 17%;
 	}
 	.subTitle{
-		font-size: 40px;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 400;
-		color: #333333;
+		font-size: 200%;
 		letter-spacing: 0px;
 		margin-left: 5%;
 		margin-top: 10%;
 		margin-bottom: 0%;
-		list-style: none;
-		display: block;
-	}
-	.subTitle::-webkit-details-marker {
-		display: none;
 	}
 	.hrSubTitle{
 		margin-left: 0%;
 		margin-top: 0%;
 		width: 95%;
 		height: 2px;
-		background-color: #666666;
-		border: none;
 	}
 	.allContents{
-		margin-left: 5%;
-		font-size: 22px;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 400;
-		line-height: 43px;
 		margin-top: 0%;
 		margin-bottom: 0%;
-		list-style: none;
-	}
-	.allContents a{
-		color: #333333;
+		margin-left: 5%;
+		font-size: 130%;
+		font-weight: 500;
+		line-height: 180%;
+
 	}
 
+	/* 検索設定 */
 	.erabu{
 		width: 25%;
 		height: 30px;
 		margin-top: 0%;
-		border-radius: 6px;
-		font-size: 15px;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 300;
+		margin-bottom: 4%;
 		background: #ffffffb9;
 	}
 	.nyuryoku{
@@ -486,23 +472,20 @@ background: #cccccce1;
 		height: 30px;
 		margin-top: -3%;
 		margin-bottom: 0%;
-		border-radius: 6px;
 		font-size: 15px;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 300;
 		background: #ffffffb9;
 	}
 	.kensakuBtn{
 		width: 30%;
 		height: 35px;
-		margin-top: 2%;
+		margin-top: -1%;
 		margin-bottom: 1%;
 		margin-left: 52%;
-		border-radius: 6px;
 		font-size: 20px;
-		font-family: 'Noto Sans JP', sans-serif;
-		font-weight: 400;
 		background: #ffffffb9;
+	}
+	.kekkaTable{
+		width: 250%;
 	}
 
 }
