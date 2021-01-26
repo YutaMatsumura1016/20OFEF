@@ -240,3 +240,6 @@ https://www.task-notes.com/entry/20150112/1420994026
 
 jQuery【 CSS 】display を使用した表示・非表示に関するサンプル
 https://programmercollege.jp/column/9757/
+
+background-size：カバーがiOSで機能しない
+https://www.it-swarm-ja.tech/ja/ios/backgroundsize%EF%BC%9A%E3%82%AB%E3%83%90%E3%83%BC%E3%81%8Cios%E3%81%A7%E6%A9%9F%E8%83%BD%E3%81%97%E3%81%AA%E3%81%84/1047351362/

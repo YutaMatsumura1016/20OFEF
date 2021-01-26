@@ -11,6 +11,20 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 }
+body:after{
+	content: "";
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: url(images/高野_白掛け.png) center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
 /* リンク色 */
 a:link { color: #000000; }
