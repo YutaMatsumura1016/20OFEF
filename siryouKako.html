@@ -63,60 +63,62 @@
 
 <!-------------------------------------------------------------------------------------->
 <!--ここから先セレクトメニュー・検索ボックス-->
-            <div style = "padding: 20px;" class = "kensakuBox" v-if = "csvCols.length > 0">
+            <div class = 'kensakusuru'>
+                <div style = "padding: 20px;" class = "kensakuBox" v-if = "csvCols.length > 0">
 
-                <div class = "kensakuAll">
+                    <div class = "kensakuAll">
 
-                    <p class = "selectMenu">
-                        <span class = "erabu1">
-                            <select class = "erabu" v-model = "selectedCol1">
-                                <option v-for = "col in csvCols">{{col}}</option>
-                            </select>
-                        </span>
-                    </p>
-                    <p class = "serchBox">
-                        <input  class = "nyuryoku" v-model = "searchKeyword1" @keydown.enter = "SearchBoxEnterkey"
-                            placeholder = "キーワードを入力"  type = "text" >
-                    </p>
+                        <p class = "selectMenu">
+                            <span class = "erabu1">
+                                <select class = "erabu" v-model = "selectedCol1">
+                                    <option v-for = "col in csvCols">{{col}}</option>
+                                </select>
+                            </span>
+                        </p>
+                        <p class = "serchBox">
+                            <input  class = "nyuryoku" v-model = "searchKeyword1" @keydown.enter = "SearchBoxEnterkey"
+                                placeholder = "キーワードを入力"  type = "text" >
+                        </p>
 
-                    <p class = "selectMenu2">
-                        <span class = "erabu2">
-                            <select class = "erabu" v-model = "selectedCol2">
-                                <option v-for="col in csvCols">{{col}}</option>
-                            </select>
-                        </span>
-                    </p>
-                    <p class="serchBox2">
-                        <input class = "nyuryoku" input v-model = "searchKeyword2" @keydown.enter = "SearchBoxEnterkey"
-                            placeholder = "キーワードを入力" type = "text">
-                    </p> 
+                        <p class = "selectMenu2">
+                            <span class = "erabu2">
+                                <select class = "erabu" v-model = "selectedCol2">
+                                    <option v-for="col in csvCols">{{col}}</option>
+                                </select>
+                            </span>
+                        </p>
+                        <p class="serchBox2">
+                            <input class = "nyuryoku" input v-model = "searchKeyword2" @keydown.enter = "SearchBoxEnterkey"
+                                placeholder = "キーワードを入力" type = "text">
+                        </p> 
 
-                    <p class = "selectMenu3">
-                        <span class = "erabu3">
-                            <select class = "erabu" v-model = "selectedCol3">
-                                <option v-for="col in csvCols">{{col}}</option>
-                            </select>
-                        </span>
-                    </p>
-                    <p class="serchBox3">
-                        <input class = "nyuryoku" v-model = "searchKeyword3" @keydown.enter = "SearchBoxEnterkey"
-                            placeholder = "キーワードを入力" type = "text">
-                    </p> 
+                        <p class = "selectMenu3">
+                            <span class = "erabu3">
+                                <select class = "erabu" v-model = "selectedCol3">
+                                    <option v-for="col in csvCols">{{col}}</option>
+                                </select>
+                            </span>
+                        </p>
+                        <p class="serchBox3">
+                            <input class = "nyuryoku" v-model = "searchKeyword3" @keydown.enter = "SearchBoxEnterkey"
+                                placeholder = "キーワードを入力" type = "text">
+                        </p> 
 
 <!-------------------------------------------------------------------------------------->
 <!--ここから先検索ボタン-->
-                    <button type = "button" class = "kensakuBtn">
-                        <a @click = "kensaku">
-                            検 索
-                        </a>
-                    </button>
+                        <button type = "button" class = "kensakuBtn">
+                            <a @click = "kensaku">
+                                検 索
+                            </a>
+                        </button>
 
+                    </div>
                 </div>
             </div>
 
 <!-------------------------------------------------------------------------------------->
 <!--ここから先検索結果-->
-            <div style = "padding: 0 20px 0 20px;"> <!--検索結果の表-->
+            <div class = 'kensakusita' style = "padding: 0 20px 0 20px;"> <!--検索結果の表-->
                 <div class = "hitsu" id = "hitsu">
                     <label v-if = "csvData.length > 0">
                         検索結果 : {{csvData.length}}件

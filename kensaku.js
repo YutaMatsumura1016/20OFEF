@@ -101,13 +101,31 @@ let vueApp = new Vue({
                 window.open(linkData[row -1][2], '_blank');
             });
 
+
+
+            // .kekkaTable{
+            //     width: 100%;
+            //     margin: 0px;
+            //     color: #000000;
+            //     background-color: #ffffffb9;
+            //     text-align: center;
+            //     border: 1px;
+            //     border-collapse: collapse;
+            //     font-family: 'Noto Sans JP', sans-serif;
+            //     font-weight: 300;
+            //     table-layout: auto;
+            // }
+
+
+
              //検索結果を表示する
             $(function() {
-                    $('#kekkaTable').css("display", "block");
+                    $('.kensakusita').css("display", "block");
                 });
             $(function() {
                 $('#hitsu').css("display", "block");
-            });    
+            });   
+
         },//SearchWord2終わり
 
 
@@ -136,7 +154,7 @@ let vueApp = new Vue({
 
             //検索結果を表示する
              $(function() {
-                $('#kekkaTable').css("display", "block");
+                $('#kensakusita').css("display", "block");
             });
         $(function() {
             $('#hitsu').css("display", "block");
@@ -170,7 +188,7 @@ let vueApp = new Vue({
 
              //検索結果を表示する
              $(function() {
-                $('#kekkaTable').css("display", "block");
+                $('#kensakusita').css("display", "block");
             });
             $(function() {
                 $('#hitsu').css("display", "block");
@@ -211,10 +229,8 @@ let vueApp = new Vue({
 // 'kensaku.js'って名前にしたけどめんどくさいからフッターも入れる
 $(function(){
     //フッターを最下部に固定
-        var $footer = $('#site-footer');
-        if(window.innerHeight > $footer.offset().top + $footer.outerHeight() ) {
-            $footer.attr({'style': 'position:fixed; top:' + (window.innerHeight - $footer.outerHeight()) + 'px;' });
-        }
-    })
-
-
+    var $footer = $('#site-footer');
+    if(window.innerHeight > $footer.offset().top + $footer.outerHeight() ) {
+        $footer.attr({'style': 'position:fixed; top:' + (window.innerHeight - $footer.outerHeight()) + 'px;' });
+    }
+})
