@@ -12,7 +12,7 @@ let vueApp = new Vue({
         searchKeyword1: null,
         searchKeyword2: null,
         searchKeyword3: null,
-        csvPathList: [{csvPath: 'OFEF歴認2020.csv'}]
+        csvPathList: [{csvPath: 'OFEF歴認2020_2.csv'}]
     },
 
     methods: {

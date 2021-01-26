@@ -34,6 +34,24 @@ https://note.com/ocha_green/n/n4f2200399859
 
 ・https://yutamatsumura1016.github.io/20OFEF/
 
+・iOSはmanifest.jsonが読み込めない.PWAcompactを使うとよい。
+
+
+[csv作成時リンク記入用のマクロ]
+Public Sub GetURL()
+　　Dim h As Hyperlink
+　　Dim a As String
+　　Dim s As String
+　　For Each h In ActiveSheet.Hyperlinks
+　　　　a = h.Address
+　　　　s = h.SubAddress
+　　　　If s <> "" Then
+　　　　　　a = a & "#" & s
+　　　　End If
+　　　　h.Range.Offset(0, 1) = a
+　　Next
+End Sub
+
 
 [やりたいこと]
 ・プッシュ通知
