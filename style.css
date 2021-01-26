@@ -265,7 +265,6 @@ a{
 .kekkaTable{
 	width: 100%;
 	margin: 0px;
-	color: #000000;
 	background-color: #ffffffb9;
 	text-align: center;
 	border: 1px;
@@ -275,7 +274,7 @@ a{
 	table-layout: auto;
 }
 table th, table td {
-	border: solid 1px black;
+	border: solid 1px #999999b9;
 	padding: 0.7% 0.2%;
 }
 .kekkaTable tr > *:nth-child(3) {
@@ -431,7 +430,7 @@ table th, table td {
 	/* 文字設定 */
 	.title{
 		font-size: 200%;
-		margin-top: 15%;
+		margin-top: 0%;
 		margin-left: 5%;
 		margin-right: 0px;
 		margin-bottom: 17%;
@@ -484,10 +483,24 @@ table th, table td {
 		font-size: 20px;
 		background: #ffffffb9;
 	}
-	.kekkaTable{
-		width: 250%;
+	.kekkaTable table{
+		width: 80%;
 	}
-
+	.kekkaTable tr > *:nth-child(5) {
+		display: none;
+	}
+	.kekkaTable tr > *:nth-child(6) {
+		display: none;
+	}
+	.kekkaTable tr > *:nth-child(7) {
+		display: none;
+	}
+	.kekkaTable tr > *:nth-child(9) {
+		display: none;
+	}
+	.kekkaTable tr > *:nth-child(10) {
+		display: none;
+	}
 }
 
 
