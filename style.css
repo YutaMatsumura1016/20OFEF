@@ -5,7 +5,7 @@
 
 /* ボディ */
 body{
-	background-image: url(images/隈構_白掛け.png);
+	background-image: url(images/高野_白掛け.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -72,8 +72,6 @@ a{
 .underTabs th{
 	padding: 1%;
 	margin: 0px;
-	font-size: 100%;
-	font-weight: 700;
 	background-color: #ffffffe7;
 	border: solid 1.5px #6666666c;
 }
@@ -229,6 +227,15 @@ a{
 	background-color: #666666;
 	border: none;
 }
+.kakoTitle{
+	color: #333333;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+}
+.hrkakoTitle{
+	border-color: #ccccccbb;
+	width: 90%;
+}
 .allContents{
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 300;
@@ -349,6 +356,7 @@ table th, table td {
 		margin-top: 5%;
 		margin-left: 5%;
 		margin-bottom: 7%;
+		color: #000000;
 	}
 	.subTitle{
 		font-size: 40px;
@@ -359,16 +367,35 @@ table th, table td {
 	}
 	.hrSubTitle{
 		margin-left: 0%;
-		margin-top: 0%;
+		margin-top: 0.2%;
 		margin-bottom: 0;
 		width: 80%;
 		height: 2px;
 	}
+	.hrTitle{
+		margin-left: 0;
+		margin-top: 0.2%;
+		margin-bottom: 10%;
+		background-color: #ccccccbb;
+		border: none;
+		width: 90%;
+		height: 2px;
+	}
+	.kakoTitle{
+		font-size: 40px;
+		margin-top: 5%;
+		margin-left: 7%;
+		margin-bottom: -1%;
+	}
 	.allContents{
+		margin-bottom: 3%;
 		margin-left: 12%;
 		font-size: 15px;
+		font-weight: 400;
 		line-height: 30px;
-		margin-bottom: 3%;
+	}
+	.allContents a{
+		color: #000000;
 	}
 	.kensakusuru{
 		margin-top: -5%;
@@ -435,6 +462,9 @@ table th, table td {
 		margin-right: 0px;
 		margin-bottom: 17%;
 	}
+	.hrTitle{
+		display: none;
+	}
 	.subTitle{
 		font-size: 200%;
 		letter-spacing: 0px;
@@ -448,13 +478,23 @@ table th, table td {
 		width: 95%;
 		height: 2px;
 	}
+	.kakoTitle{
+		font-size: 170%;
+		margin-top: 5%;
+		margin-left: 5%;
+		margin-right: 0px;
+		margin-bottom: -7%;
+	}
+	.hrkakoTitle{
+		margin-left: 5%;
+	}
 	.allContents{
 		margin-top: 0%;
 		margin-bottom: 0%;
 		margin-left: 5%;
 		font-size: 130%;
-		font-weight: 500;
-		line-height: 180%;
+		font-weight: 400;
+		line-height: 160%;
 
 	}
 
