@@ -84,20 +84,18 @@ a{
 	border-collapse: collapse;	
 }
 .underTabs th{
-	padding: 1%;
+	padding: 0%;
 	margin: 0px;
 	background-color: #ffffffe7;
 	border: solid 1.5px #6666666c;
 }
-.underTabs th a{
-	height: 100%;
-	padding: 2px 5px;
-	align-items: center;	
-}
+
 .underTabsSpace img{
+	margin-top: 9%;
 	opacity: 0.5;
 }
 .underTabsSpaceNow img{
+	margin-top: 9%;
 	opacity: 0.9;
 }
 
