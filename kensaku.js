@@ -124,7 +124,7 @@ let vueApp = new Vue({
             linkData = this.csvData;
             $('#kekkaTable tr').click(function(){
                 row = $("tr").index(this);
-                window.open(linkData[row -1][2], '_blank');
+                window.open(linkData[row -1][9], '_blank');
             });  
         },//SearchWord2終わり
 
@@ -159,7 +159,7 @@ let vueApp = new Vue({
             linkData = this.csvData;
             $('#kekkaTable tr').click(function(){
                 row = $("tr").index(this);
-                 window.open(linkData[row -1][2], '_blank');
+                 window.open(linkData[row -1][9], '_blank');
             });  
         },//SearchWord3終わり
 
@@ -195,7 +195,7 @@ let vueApp = new Vue({
             linkData = this.csvData;
             $('#kekkaTable tr').click(function(){
                 row = $("tr").index(this);
-                window.open(linkData[row -1][2], '_blank');
+                window.open(linkData[row -1][9], '_blank');
             });
         },
 
@@ -206,8 +206,6 @@ let vueApp = new Vue({
         }
         
     },
-
-
 
     mounted: function () {
         if (location.href.indexOf('file') != -1) {

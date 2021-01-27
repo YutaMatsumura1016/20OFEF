@@ -22,7 +22,7 @@ self.addEventListener('install', async(ev) => { //installハンドラ
 self.addEventListener('activate', async(ev) => { //activateハンドラ
 	console.log("SW: activate eventが発火");
 	ev.waitUntil((async () => {
-		const keys = await caches.keys();
+		const keys = await caches.keys();-
 		console.log(keys);
 		const targets = keys.filter(key => key !== cacheName);
 		console.log(targets);
