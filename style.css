@@ -556,7 +556,7 @@ table th, table td {
 	.kekkaTable tr > *:nth-child(7) {
 		display: none;
 	}
-	.kekkaTable tr > *:nth-child(8) {
+	.kekkaTable tr > *:nth-child(3) {
 		display: none;
 	}
 	.kekkaTable tr > *:nth-child(4) {

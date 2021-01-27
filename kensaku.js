@@ -54,9 +54,10 @@ let vueApp = new Vue({
                     vueThis.csvData = results.data.slice(1);
                     vueThis.allCsvData = results.data.slice(1);
                 }
-            });
+            });                
         },
 
+        
 
         //検索ボックスの中身を精査
         kensaku: function () {
@@ -132,12 +133,12 @@ let vueApp = new Vue({
             });  
 
             //ファイル名と稿数を前に
-            $(function() {
-                jQuery.each($("table tr"), function() { 
-                    $(this).children(":eq(0)").after($(this).children(":eq(8)"));
-                    $(this).children(":eq(1)").after($(this).children(":eq(6)"));
-                });
-            });
+            // $(function() {
+            //     jQuery.each($("kekkaTable tr"), function() { 
+            //         $(this).children(":eq(0)").after($(this).children(":eq(8)"));
+            //         $(this).children(":eq(1)").after($(this).children(":eq(6)"));
+            //     });
+            // });
 
             //動かなかった
             // $(function() {
@@ -185,12 +186,12 @@ let vueApp = new Vue({
             }); 
 
             //ファイル名と稿数を前に
-            $(function() {
-                jQuery.each($("table tr"), function() { 
-                    $(this).children(":eq(0)").after($(this).children(":eq(8)"));
-                    $(this).children(":eq(1)").after($(this).children(":eq(6)"));
-                });
-            });
+            // $(function() {
+            //     jQuery.each($("#kekkaTable tr"), function() { 
+            //         $(this).children(":eq(0)").after($(this).children(":eq(8)"));
+            //         $(this).children(":eq(1)").after($(this).children(":eq(6)"));
+            //     });
+            // });
 
         },//SearchWord3終わり
 
@@ -234,12 +235,12 @@ let vueApp = new Vue({
             });
 
             //ファイル名と稿数を前に
-            $(function() {
-                jQuery.each($("table tr"), function() { 
-                    $(this).children(":eq(0)").after($(this).children(":eq(8)"));
-                    $(this).children(":eq(1)").after($(this).children(":eq(6)"));
-                });
-            });
+            // $(function() {
+            //     jQuery.each($("kekkaTable tr"), function() { 
+            //         $(this).children(":eq(0)").after($(this).children(":eq(8)"));
+            //         $(this).children(":eq(1)").after($(this).children(":eq(6)"));
+            //     });
+            // });
 
         },
 
