@@ -547,31 +547,23 @@ table th, table td {
 	.kekkaTable table{
 		width: 80%;
 	}
-	.kekkaTable tr > *:nth-child(5) {
-		display: none;
-	}
-	.kekkaTable tr > *:nth-child(6) {
-		display: none;
-	}
-	.kekkaTable tr > *:nth-child(7) {
-		display: none;
-	}
 	.kekkaTable tr > *:nth-child(3) {
 		display: none;
 	}
 	.kekkaTable tr > *:nth-child(4) {
 		display: none;
 	}
+	.kekkaTable tr > *:nth-child(5) {
+		display: none;
+	}
+	.kekkaTable tr > *:nth-child(6) {
+		display: none;
+	}
+	.kekkaTable tr > *:nth-child(8) {
+		display: none;
+	}
+
 	
 }
 
-/* 
-	9:担当者
-	8:状態	
-	7:企画
-	6:種類
-	5:チーム
-	3:稿
-	2:ファイル名
-*/
 
