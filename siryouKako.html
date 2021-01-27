@@ -7,10 +7,7 @@
     <title>過去資料</title>
     <link rel = "manifest" href = "./manifest.json">
     <link rel = "stylesheet" href = "style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"
-        integrity="sha512-rKFvwjvE4liWPlFnvH4ZhRDfNZ9FOpdkD/BU5gAIA3VS3vOQrQ5BjKgbO3kxebKhHdHcNUHLqxQYSoxee9UwgA=="
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap">
 </head>
 
 
@@ -123,8 +120,8 @@
                     </label>
                 </div>
 
-                <div>
-                    <table class = "kekkaTable" id = "kekkaTable">
+                <div class = "sortable-table">
+                    <table class = "kekkaTable" id = "kekkaTable" >
                         <thead> <!--表のヘッダ行-->
                             <tr>
                                 <th class = "toprow" v-for = "col in csvCols"> {{col}} </th>
@@ -143,6 +140,9 @@
 
         </div> <!--全体締め-->
     </section>
+
+<!-------------------------------------------------------------------------------------->
+<!--ここから先最初から出てる資料-->
 
     <div class = 'kakoSiryou'>
         <div class = "kakoTitle">演出資料</div>
@@ -365,6 +365,10 @@
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src = "https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script type = "text/javascript" src = "kensaku.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"
+    integrity = "sha512-rKFvwjvE4liWPlFnvH4ZhRDfNZ9FOpdkD/BU5gAIA3VS3vOQrQ5BjKgbO3kxebKhHdHcNUHLqxQYSoxee9UwgA=="
+    crossorigin = "anonymous"></script>
 
 
 </body>

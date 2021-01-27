@@ -296,7 +296,7 @@ table th, table td {
 	border: solid 1px #999999b9;
 	padding: 0.7% 0.2%;
 }
-.kekkaTable tr > *:nth-child(3) {
+.kekkaTable tr > *:nth-child(10) {
 	display: none;
 }
 .toprow{
@@ -431,11 +431,11 @@ table th, table td {
 		font-size: 15px;
 	}
 	.kensakuBtn{
-		width: 50px;
+		width: 80px;
 		height: 30px;
 		margin-top: -2%;
 		margin-bottom: 1%;
-		margin-left: 365px;
+		margin-left: 339px;
 		font-size: 15px;
 	}
 }
@@ -565,3 +565,51 @@ table th, table td {
 }
 
 
+/* テスト中の機能 */
+
+/* 
+.tablesorter th{
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+}
+.tablesorter th::before, .tablesorter th::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    right: 7px;
+    width: 0;
+    height: 0;
+    border: 4px dashed;
+    border-color: #333 transparent;
+    pointer-events: none;
+}
+.tablesorter th::before{
+    border-bottom-style: solid;
+    border-top: none;
+    top: 30%;
+}
+.tablesorter th::after{
+    border-top-style: solid;
+    border-bottom: none;
+    bottom: 30%;
+}
+.tablesorter th.tablesorter-headerAsc:after{
+    border: none;
+}
+.tablesorter th.tablesorter-headerAsc:before{
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.tablesorter th.tablesorter-headerDesc:before{
+    border: none;
+}
+.tablesorter th.tablesorter-headerDesc:after{
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.tablesorter th.sorter-false:before, .tablesorter th.sorter-false:after{
+    border: none;
+} */

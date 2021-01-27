@@ -124,8 +124,16 @@ let vueApp = new Vue({
             linkData = this.csvData;
             $('#kekkaTable tr').click(function(){
                 row = $("tr").index(this);
+                if(row == 0){
+                    null;
+                }else{
                 window.open(linkData[row -1][9], '_blank');
+                }
             });  
+
+            $(document).ready(function() {
+                $('#kekkaTable').tablesorter();
+            });
         },//SearchWord2終わり
 
 
@@ -159,8 +167,12 @@ let vueApp = new Vue({
             linkData = this.csvData;
             $('#kekkaTable tr').click(function(){
                 row = $("tr").index(this);
-                 window.open(linkData[row -1][9], '_blank');
-            });  
+                if(row == 0){
+                    null;
+                }else{
+                window.open(linkData[row -1][9], '_blank');
+                }
+            }); 
         },//SearchWord3終わり
 
 
@@ -195,7 +207,11 @@ let vueApp = new Vue({
             linkData = this.csvData;
             $('#kekkaTable tr').click(function(){
                 row = $("tr").index(this);
+                if(row == 0){
+                    null;
+                }else{
                 window.open(linkData[row -1][9], '_blank');
+                }
             });
         },
 
@@ -233,4 +249,7 @@ $(function(){
         $footer.attr({'style': 'position:fixed; top:' + (window.innerHeight - $footer.outerHeight()) + 'px;' });
     }
 });
+
+
+
 
