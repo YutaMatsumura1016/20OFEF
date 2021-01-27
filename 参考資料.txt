@@ -252,3 +252,6 @@ https://qiita.com/bonkeenu/items/0c8766e5f3e94c0e68c9
 
 Excel ハイパーリンクのURLを別のセルに表示したい。
 https://oshiete.goo.ne.jp/qa/2356920.html
+
+テーブルの列の順序を変更する
+https://www.it-swarm-ja.tech/ja/javascript/%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%AE%E5%88%97%E3%81%AE%E9%A0%86%E5%BA%8F%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B/971625491/
