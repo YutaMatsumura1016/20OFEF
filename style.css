@@ -556,60 +556,22 @@ table th, table td {
 	.kekkaTable tr > *:nth-child(7) {
 		display: none;
 	}
-	.kekkaTable tr > *:nth-child(9) {
+	.kekkaTable tr > *:nth-child(8) {
 		display: none;
 	}
-	.kekkaTable tr > *:nth-child(10) {
+	.kekkaTable tr > *:nth-child(4) {
 		display: none;
 	}
+	
 }
-
-
-/* テスト中の機能 */
 
 /* 
-.tablesorter th{
-    position: relative;
-    cursor: pointer;
-    text-align: left;
-}
-.tablesorter th::before, .tablesorter th::after{
-    content: '';
-    position: absolute;
-    z-index: 2;
-    right: 7px;
-    width: 0;
-    height: 0;
-    border: 4px dashed;
-    border-color: #333 transparent;
-    pointer-events: none;
-}
-.tablesorter th::before{
-    border-bottom-style: solid;
-    border-top: none;
-    top: 30%;
-}
-.tablesorter th::after{
-    border-top-style: solid;
-    border-bottom: none;
-    bottom: 30%;
-}
-.tablesorter th.tablesorter-headerAsc:after{
-    border: none;
-}
-.tablesorter th.tablesorter-headerAsc:before{
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-.tablesorter th.tablesorter-headerDesc:before{
-    border: none;
-}
-.tablesorter th.tablesorter-headerDesc:after{
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-.tablesorter th.sorter-false:before, .tablesorter th.sorter-false:after{
-    border: none;
-} */
+	9:担当者
+	8:状態	
+	7:企画
+	6:種類
+	5:チーム
+	3:稿
+	2:ファイル名
+*/
+

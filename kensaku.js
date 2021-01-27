@@ -131,9 +131,19 @@ let vueApp = new Vue({
                 }
             });  
 
-            $(document).ready(function() {
-                $('#kekkaTable').tablesorter();
+            //ファイル名と稿数を前に
+            $(function() {
+                jQuery.each($("table tr"), function() { 
+                    $(this).children(":eq(0)").after($(this).children(":eq(8)"));
+                    $(this).children(":eq(1)").after($(this).children(":eq(6)"));
+                });
             });
+
+            //動かなかった
+            // $(function() {
+            //     $('#kekkaTableSort').tablesorter();
+            // });
+            
         },//SearchWord2終わり
 
 
@@ -173,6 +183,15 @@ let vueApp = new Vue({
                 window.open(linkData[row -1][9], '_blank');
                 }
             }); 
+
+            //ファイル名と稿数を前に
+            $(function() {
+                jQuery.each($("table tr"), function() { 
+                    $(this).children(":eq(0)").after($(this).children(":eq(8)"));
+                    $(this).children(":eq(1)").after($(this).children(":eq(6)"));
+                });
+            });
+
         },//SearchWord3終わり
 
 
@@ -213,6 +232,15 @@ let vueApp = new Vue({
                 window.open(linkData[row -1][9], '_blank');
                 }
             });
+
+            //ファイル名と稿数を前に
+            $(function() {
+                jQuery.each($("table tr"), function() { 
+                    $(this).children(":eq(0)").after($(this).children(":eq(8)"));
+                    $(this).children(":eq(1)").after($(this).children(":eq(6)"));
+                });
+            });
+
         },
 
         // Enterキーで検索
