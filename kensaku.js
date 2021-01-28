@@ -432,17 +432,4 @@ $(function() {
     $("#modoruTop").click(function() {
       $('body, html').animate({scrollTop: 0}, 200, 'linear');
     });
-
-    $(function() {
-      var $toTopButton = $('#modoruTop');
-      var scrollTop = $(window).scrollTop();
-      var windowHeight = $(window).height();
-  
-      if (scrollTop >= windowHeight) {
-        $toTopButton.show();
-      } else {
-        $toTopButton.hide();
-      }
-  });
-
 });
