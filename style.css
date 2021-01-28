@@ -306,6 +306,14 @@ table th, table td {
 }
 
 /* ---------------------------------------------------------------------- */
+/* トップに戻る */
+#modoruTop {
+	cursor: pointer;
+	position: fixed;
+	opacity: 0.7;
+  }
+
+/* ---------------------------------------------------------------------- */
 
 /* ここから先メディアクエリ */
 
@@ -440,6 +448,12 @@ table th, table td {
 	}
 }
 
+	#modoruTop {
+		width: 30%;
+		margin-left: 90%;  
+		bottom: 10%;
+	}
+
 /* ---------------------------------------------------------------------- */
 /*スマホ */
 @media screen and (min-width: 1px) and (max-width: 599px){
@@ -563,6 +577,11 @@ table th, table td {
 		display: none;
 	}
 
+	#modoruTop {
+		width: 100%;
+		margin-left: 80%;  
+		bottom: 13%;
+	  }
 	
 }
 
