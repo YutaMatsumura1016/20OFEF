@@ -1,4 +1,4 @@
-const cacheName = 'V6.4.0'; //キャッシュの名づけ
+const cacheName = 'V6.4.1'; //キャッシュの名づけ
 
 const cacheAssets = [ //必要最低限のもの
 	'index.html',
@@ -34,6 +34,7 @@ self.addEventListener('activate', async(ev) => { //activateハンドラ
 self.addEventListener('fetch', async(ev) => { //fetchハンドラ
 	ev.respondWith((async() => {
 		const hit = await caches.match(ev.request);
+		console.log('HTTPがリクエストされました');
 
 		//キャッシュがあれば返す
 		if(hit){
